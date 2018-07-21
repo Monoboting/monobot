@@ -1379,4 +1379,4 @@ client.on('message', message => {
        //message.channel.send("plz work");
     }*/
 });
-client.login(BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
