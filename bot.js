@@ -1,5 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var fs = require("fs");
+
+// Get the text file and load it into a variable.
+var file = fs.readFileSync("./lbClassic.txt", "utf8");
 //const sol = '';
 //const solArr = [];
 //const solNum = 0;
