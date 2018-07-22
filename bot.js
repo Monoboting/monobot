@@ -683,7 +683,7 @@ client.on('message', message => {
 	}
 	if(message.content == 'm!meme'){
 		var rerndammerme = Math.random();
-		var nermmerme = 25;
+		var nermmerme = 41;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
 		else if (rerndammerme <= 2/nermmerme)
@@ -734,6 +734,12 @@ client.on('message', message => {
 			rerndammerme = 24;
 		else if (rerndammerme <= 25/nermmerme)
 			rerndammerme = 25;
+		else if (rerndammerme <= 26/nermmerme)
+			rerndammerme = 26;
+		else if (rerndammerme <= 27/nermmerme)
+			rerndammerme = 27;
+		else if (rerndammerme <= 28/nermmerme)
+			rerndammerme = 28;
 		
 		if (rerndammerme == 1 || rerndammerme == 2)
 			message.channel.send("Meme is made by Mr.MarioOdyssey");
