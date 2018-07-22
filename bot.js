@@ -787,12 +787,14 @@ client.on('message', message => {
 			message.channel.send("Meme is made by bolis");
 		if (rerndammerme == 33)
 			message.channel.send("Meme is made by Woomy on a vroomy");
-		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25)
+		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25 || rerndammerme == 26 || rerndammerme == 27 || rerndammerme == 28 || rerndammerme == 31 || rerndammerme == 32)
 			message.channel.send("Meme is made by SSeptic");
 		if (rerndammerme == 17 || rerndammerme == 18 || rerndammerme == 19 || rerndammerme == 36)
 			message.channel.send("Meme is made by D∆RITO");		
 		if (rerndammerme == 16 || rerndammerme == 35 || rerndammerme == 34)
 			message.channel.send("Meme is made by Buckbuckchick");
+		if (rerndammerme == 29 || rerndammerme == 30)
+			message.channel.send("Meme is made by Flipcakez");
 		
         message.channel.send({files: ["./meme"+ rerndammerme +".jpg"]});
     }
