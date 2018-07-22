@@ -317,7 +317,7 @@ client.on('message', message => {
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
         title: "V 1.5.5:",
-        description: "MINOR UPDATE/nChanged images for solution 10 and 40",
+        description: "MINOR UPDATE\nChanged images for solution 10 and 40",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
