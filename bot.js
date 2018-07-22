@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var fs = require("fs");
 
 // Get the text file and load it into a variable.
-var file = fs.readFileSync("./lbClassic.txt", "utf8");
+var lbclasserc = fs.readFileSync("./lbClassic.txt", "utf8");
 //const sol = '';
 //const solArr = [];
 //const solNum = 0;
@@ -759,6 +759,18 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Buckbuckchick");
 		
         message.channel.send({files: ["./meme"+ rerndammerme +".jpg"]});
+    }
+    if(message.content == 'm!lb classic'){
+		message.channel.send({embed: {
+		title: "LEADERBOARD CLASSIC",
+		description: ""+ lbclasserc +"",
+		timestamp: new Date(),
+		footer: {
+				icon_url: client.user.avatarURL,
+				text: "Monogolf Bot"
+			}
+		}
+		});
     }
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
