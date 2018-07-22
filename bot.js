@@ -740,6 +740,32 @@ client.on('message', message => {
 			rerndammerme = 27;
 		else if (rerndammerme <= 28/nermmerme)
 			rerndammerme = 28;
+		else if (rerndammerme <= 29/nermmerme)
+			rerndammerme = 29;
+		else if (rerndammerme <= 30/nermmerme)
+			rerndammerme = 30;
+		else if (rerndammerme <= 31/nermmerme)
+			rerndammerme = 31;
+		else if (rerndammerme <= 32/nermmerme)
+			rerndammerme = 32;
+		else if (rerndammerme <= 33/nermmerme)
+			rerndammerme = 33;
+		else if (rerndammerme <= 34/nermmerme)
+			rerndammerme = 34;
+		else if (rerndammerme <= 35/nermmerme)
+			rerndammerme = 35;
+		else if (rerndammerme <= 36/nermmerme)
+			rerndammerme = 36;
+		else if (rerndammerme <= 37/nermmerme)
+			rerndammerme = 37;
+		else if (rerndammerme <= 38/nermmerme)
+			rerndammerme = 38;
+		else if (rerndammerme <= 39/nermmerme)
+			rerndammerme = 39;
+		else if (rerndammerme <= 40/nermmerme)
+			rerndammerme = 40;
+		else if (rerndammerme <= 41/nermmerme)
+			rerndammerme = 41;
 		
 		if (rerndammerme == 1 || rerndammerme == 2)
 			message.channel.send("Meme is made by Mr.MarioOdyssey");
