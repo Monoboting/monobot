@@ -771,6 +771,8 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Mr.MarioOdyssey");
 		if (rerndammerme == 3 || rerndammerme == 22)
 			message.channel.send("Meme is made by Jek");
+		if (rerndammerme == 40 || rerndammerme == 39 || rerndammerme == 38 || rerndammerme == 37)
+			message.channel.send("Meme is made by AdSF");
 		if (rerndammerme == 4 || rerndammerme == 15)
 			message.channel.send("Meme is made by 24K Dιαмoɴd");
 		if (rerndammerme == 5 || rerndammerme == 6)
@@ -783,11 +785,13 @@ client.on('message', message => {
 			message.channel.send("Meme is made by emisv stonk");
 		if (rerndammerme == 14)
 			message.channel.send("Meme is made by bolis");
+		if (rerndammerme == 33)
+			message.channel.send("Meme is made by Woomy on a vroomy");
 		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25)
 			message.channel.send("Meme is made by SSeptic");
-		if (rerndammerme == 17 || rerndammerme == 18 || rerndammerme == 19)
+		if (rerndammerme == 17 || rerndammerme == 18 || rerndammerme == 19 || rerndammerme == 36)
 			message.channel.send("Meme is made by D∆RITO");		
-		if (rerndammerme == 16)
+		if (rerndammerme == 16 || rerndammerme == 35 || rerndammerme == 34)
 			message.channel.send("Meme is made by Buckbuckchick");
 		
         message.channel.send({files: ["./meme"+ rerndammerme +".jpg"]});
