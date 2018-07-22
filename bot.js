@@ -305,7 +305,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.5\n\n-Owner/Coder: Jek\n-Helpers: AdSF and ChaotiC\n\nApproved by Lafocade",
+        description: "Version 1.5.5\n\n-Owner/Coder: Jek\n-Helpers: AdSF and ChaotiC\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -316,8 +316,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.5:",
-        description: "UPDATED COMMAND:\nm!meme -> provides a monogolf meme submitted by users!\n41 memes so far!\n(send your memes by dm'ing @AdSF or @Jek or the mods and your meme will be added)\nENJOY!",
+        title: "V 1.5.5:",
+        description: "MINOR UPDATE/nChanged images for solution 10 and 40",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
