@@ -831,7 +831,7 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Ctrl+Alt");
 		if (rerndammerme == 7 || rerndammerme == 8 || rerndammerme == 11)
 			message.channel.send("Meme is made by ©Geo®™");
-		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41)
+		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41 || rerndammerme == 26 )
 			message.channel.send("Meme is made by DJ Lapras");
 		if (rerndammerme == 13)
 			message.channel.send("Meme is made by emisv stonk");
@@ -839,7 +839,7 @@ client.on('message', message => {
 			message.channel.send("Meme is made by bolis");
 		if (rerndammerme == 33)
 			message.channel.send("Meme is made by Woomy on a vroomy");
-		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25 || rerndammerme == 26 || rerndammerme == 27 || rerndammerme == 28 || rerndammerme == 31 || rerndammerme == 32)
+		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25 || rerndammerme == 27 || rerndammerme == 28 || rerndammerme == 31 || rerndammerme == 32)
 			message.channel.send("Meme is made by SSeptic");
 		if (rerndammerme == 17 || rerndammerme == 18 || rerndammerme == 19 || rerndammerme == 36)
 			message.channel.send("Meme is made by D∆RITO");		
