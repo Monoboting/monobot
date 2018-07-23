@@ -74,7 +74,7 @@ client.on('message', message => {
         icon_url: client.user.avatarURL
         },
         title: "COMMANDS:",
-        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme",
+        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -115,6 +115,10 @@ client.on('message', message => {
 		{
             name: "•m!meme",
 			value: "m!meme provides a random meme"
+        },
+		{
+            name: "•m!ball",
+			value: "m!ball provides a random ball"
         }
         ],
         timestamp: new Date(),
