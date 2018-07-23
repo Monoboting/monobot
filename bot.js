@@ -11,6 +11,54 @@ var lbclasserc = fs.readFileSync("./lbClassic.txt", "utf8");
 //const term = 0;
 //const senrderng = false;
 
+const berllz = {
+	0 : "<:YellowBall:463752476730851328>",
+	1 : "<:WhiteBall:463752474512326657>",
+	2 : "<:SkyBlueBall:463752476362014731>",
+	3 : "<:RednBlueBall:463752479247564800>",
+	4 : "<:RedBall:463752476177334273>",
+	5 : "<:PurpleBall:463752475934195743>",
+	6 : "<:PolarBall:463752478496784384>",
+	7 : "<:OrangeBall:463752475791327233>",
+	8 : "<:LimeBall:463380371262930945>",
+	9 : "<:LightPinkBall:463752475657371701>",
+	10 : "<:LightGrayBall:463752477410590722>",
+	11 : "<:InvertedBall:463752473308561418>",
+	12 : "<:InfraYellowBall:463752479046369310>",
+	13 : "<:InfraredBall:463752478031347714>",
+	14 : "<:GreenBall:463752472909840404>",
+	15 : "<:GrassyBall:463752476919726093>",
+	16 : "<:DarkPinkBall:463752471035117578>",
+	17 : "<:DarkGrayBall:463752470712287253>",
+	18 : "<:DarkBlueBall:463752470925934592>",
+	19 : "<:CoolBall:463752467616628737>",
+	20 : "<:BrownBall:463752466945671224>"
+};
+const berllzNerm = {
+	0 : "Yellow Ball",
+	1 : "White Ball",
+	2 : "Sky Blue Ball",
+	3 : "Red n Blue Ball",
+	4 : "Red Ball",
+	5 : "Purple Ball",
+	6 : "Polar Ball",
+	7 : "Orange Ball",
+	8 : "Lime Ball",
+	9 : "Light Pink Ball",
+	10 : "Light Gray Ball",
+	11 : "Inverted Ball",
+	12 : "Infra Yellow Ball",
+	13 : "Infrared Ball",
+	14 : "Green Ball",
+	15 : "Grassy Ball",
+	16 : "Dark Pink Ball",
+	17 : "Dark Gray Ball",
+	18 : "Dark Blue Ball",
+	19 : "Cool Ball",
+	20 : "Brown Ball"
+};
+
+
 client.on('ready', ()  =>{
     //console.log('I am ready!');
     client.user.setStatus("Online");
@@ -305,7 +353,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.5.5\n\n-Owner/Coder: Jek\n-Helpers: AdSF and ChaotiC\n\nApproved by Lafocade",
+        description: "Version 1.6\n\n-Owner/Coder: Jek\n-Helpers: AdSF and ChaotiC\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -316,8 +364,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.5.5:",
-        description: "MINOR UPDATE\nChanged images for solution 10 and 40",
+        title: "V 1.6:",
+        description: "NEW COMMAND UPDATE:\n Fun Command: m!ball\nSuggested by: DJ Lapras\nIf you have any suggestion on any fun commands, dm @AdSF or @Jek or any of the mods and it might be added\nEnjoy! ;)",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -809,6 +857,59 @@ client.on('message', message => {
 			}
 		}
 		});
+    }
+    if(message.content == 'm!ball'){
+	    var ranNerm = 0;
+	    do {
+		ranNerm = Math.random();
+		if (ranNerm <= 0.05)
+			ranNerm = 0;
+		else if (ranNerm <= 0.10)
+			ranNerm = 1;
+		else if (ranNerm <= 0.15)
+			ranNerm = 2;
+		else if (ranNerm <= 0.20)
+			ranNerm = 3;
+		else if (ranNerm <= 0.25)
+			ranNerm = 4;
+		else if (ranNerm <= 0.30)
+			ranNerm = 5;
+		else if (ranNerm <= 0.35)
+			ranNerm = 6;
+		else if (ranNerm <= 0.40)
+			ranNerm = 7;
+		else if (ranNerm <= 0.45)
+			ranNerm = 8;
+		else if (ranNerm <= 0.50)
+			ranNerm = 9;
+		else if (ranNerm <= 0.55)
+			ranNerm = 10;
+		else if (ranNerm <= 0.60)
+			ranNerm = 11;
+		else if (ranNerm <= 0.65)
+			ranNerm = 12;
+		else if (ranNerm <= 0.70)
+			ranNerm = 13;
+		else if (ranNerm <= 0.75)
+			ranNerm = 14;
+		else if (ranNerm <= 0.80)
+			ranNerm = 15;
+		else if (ranNerm <= 0.85)
+			ranNerm = 16;
+		else if (ranNerm <= 0.90)
+			ranNerm = 17;
+		else if (ranNerm <= 0.95)
+			ranNerm = 18;
+	} while (ranNerm != 0 && ranNerm != 1 && ranNerm != 2 && ranNerm != 3 && ranNerm != 4 && ranNerm != 5 && ranNerm != 6 && ranNerm != 7 && ranNerm != 8 && ranNerm != 9 && ranNerm != 10 && ranNerm != 11 && ranNerm != 12 && ranNerm != 13 && ranNerm != 14 && ranNerm != 15 && ranNerm != 16 && ranNerm != 17 && ranNerm != 18);
+	message.channel.send({embed: {
+	title: "" + berllzNerm[ranNerm] + "",
+	description: "" + berllz[ranNerm] + "",
+	timestamp: new Date(),
+	footer: {
+			icon_url: client.user.avatarURL,
+			text: "Monogolf Bot"
+		}
+	}});
     }
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
