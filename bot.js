@@ -10,7 +10,7 @@ var lbclasserc = fs.readFileSync("./lbClassic.txt", "utf8");
 //const senrd = false;
 //const term = 0;
 //const senrderng = false;
-
+//<:gun1:471054081809448960> <:gun2:471054082061107211> <:gun3:471054078751932416> <:gun4:471054075967045633>
 const berllz = {
 	0 : "<:YellowBall:463752476730851328>",
 	1 : "<:WhiteBall:463752474512326657>",
