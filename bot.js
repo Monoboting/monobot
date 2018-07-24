@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var fs = require("fs");
-/*
+
 //translator
-const tlcfg = require("./config.json")
 const fs = require("fs")
 const Eris = require("eris")
 const OS = require("os")
@@ -17,7 +16,7 @@ const kpop = require("kpop")
 const japanese = require("japanese")
 const ostb = require("os-toolbox");
 const langs = require("./langmap.json")
-*/
+
 
 // Get the text file and load it into a variable.
 var lbclasserc = fs.readFileSync("./lbClassic.txt", "utf8");
