@@ -868,7 +868,7 @@ client.on('message', message => {
     if(message.content == 'm!gun'){
 		message.channel.send({embed: {
 		title: "MONOGUN",
-		description: "gun1:471054081809448960> <:gun2:471054082061107211> <:gun3:471054078751932416> <:gun4:471054075967045633>",
+		description: "<:gun1:471054081809448960> <:gun2:471054082061107211> <:gun3:471054078751932416> <:gun4:471054075967045633>",
 		timestamp: new Date(),
 		footer: {
 				icon_url: client.user.avatarURL,
