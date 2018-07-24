@@ -10,10 +10,11 @@ const OS = require("os");
 const translate = require("google-translate-api")
 const lang = require("./langs.json");
 //const prefix = "m!";
+/*
 const G = require("gizoogle");
 const zalgo = require("to-zalgo");
 const flip = require("flipout");
-/*
+
 const kpop = require("kpop");
 const japanese = require("japanese");
 const ostb = require("os-toolbox");
