@@ -6,8 +6,8 @@ const fs = require("fs");
 /*
 const Eris = require("eris");
 const OS = require("os");
-*/
 const translate = require("google-translate-api")
+*/
 const lang = require("./langs.json");
 //const prefix = "m!";
 /*
