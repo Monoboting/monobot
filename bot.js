@@ -879,7 +879,7 @@ client.on('message', message => {
 	}
 	if(message.content == 'm!glock'){
 		message.channel.send({embed: {
-		title: "MONOGUN",
+		title: "MONOGLOCK",
 		description: "<:glock1:471414267711586314><:glock2:471414260354777090><:glock3:471414244089397258>\n<:glock4:471414263458562058>",
 		timestamp: new Date(),
 		footer: {
