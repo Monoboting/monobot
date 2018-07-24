@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 //translator
 const fs = require("fs");
+/*
 const Eris = require("eris");
 const OS = require("os");
 const translate = require("google-translate-api")
@@ -15,7 +16,7 @@ const kpop = require("kpop");
 const japanese = require("japanese");
 const ostb = require("os-toolbox");
 const langs = require("./langmap.json");
-
+*/
 
 // Get the text file and load it into a variable.
 var lbclasserc = fs.readFileSync("./lbClassic.txt", "utf8");
