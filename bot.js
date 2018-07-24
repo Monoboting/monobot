@@ -1555,6 +1555,7 @@ client.on('message', message => {
     }*/
     
 });
+/*
 //tranlator
 bot.on("messageCreate", async msg => {
   if(msg.author.bot) return
@@ -1649,7 +1650,7 @@ bot.on("messageCreate", async msg => {
     }
   }
 });
-
+*/
 
 
 
