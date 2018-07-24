@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var fs = require("fs");
 
 //translator
 const fs = require("fs")
