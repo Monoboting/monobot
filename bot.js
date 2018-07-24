@@ -3,23 +3,6 @@ const client = new Discord.Client();
 
 //translator
 const fs = require("fs");
-/*
-const Eris = require("eris");
-const OS = require("os");
-const translate = require("google-translate-api")
-*/
-const lang = require("./langs.json");
-//const prefix = "m!";
-/*
-const G = require("gizoogle");
-const zalgo = require("to-zalgo");
-const flip = require("flipout");
-
-const kpop = require("kpop");
-const japanese = require("japanese");
-const ostb = require("os-toolbox");
-*/
-const langs = require("./langmap.json");
 
 
 // Get the text file and load it into a variable.
@@ -1559,102 +1542,6 @@ client.on('message', message => {
     }*/
     
 });
-/*
-//tranlator
-bot.on("messageCreate", async msg => {
-  if(msg.author.bot) return
-  const args = msg.content.slice(prefix.length).trim().split(/ +/g);
-  const command = args.shift().toString().toLowerCase();
-  if(msg.content.toLowerCase().indexOf(prefix + " ") == 0) { 
-    let langs = require("./langmap.json")
-    let LangMap = new Map()
-    let thingToTranslate = args.join(" ");
-    if (command === "lang") return languageDetection(thingToTranslate)
-    for (let l in langs) {
-      for (let a in langs[l].alias) {
-        LangMap.set(langs[l].alias[a], (args) => {
-          return translateFunction(l, args.join(" "), `:flag_${langs[l].flag}:`)
-        })
-      }
-    }
-    let toT = LangMap.get(command)
-    if (toT) {
-      return toT(args)
-    }
-    switch(command) {
-      case "romanized-korean": return funTranslation(kpop.romanize(thingToTranslate), ":flag_kr:");
-      case "hangulified-korean": return funTranslation(kpop.hangulify(thingToTranslate), ":flag_kr:");
-      case "romanized-japanese": return funTranslation(japanese.romanize(thingToTranslate), ":flag_jp:");
-      case "katakanized-japanese": return funTranslation(japanese.katakanize(thingToTranslate), ":flag_jp:");
-      case "hiraganized-japanese": return funTranslation(japanese.hiraganize(thingToTranslate), ":flag_jp:");
-      case "flip": case "flipped": return funTranslation(flip(thingToTranslate), ":upside_down:");
-      case "zalgo": return funTranslation(zalgo(thingToTranslate), ":upside_down:");
-      case "gang": case "gangsta": G.string(thingToTranslate, (err, result)=>{ if(err){ return msg.channel.createMessage("Oops, there was an error!\nDid you forget to enter something to translate?") } return funTranslation(result, ":gun:") }); break;
-    }
-    function translateFunction(lang, string, flag){
-      if(string == "" || string == null || string == undefined) return msg.channel.createMessage("Nothing to translate!");
-      translate(string, { to: lang }).then((res)=>{
-        if (res.text.length > 200) {
-          return msg.channel.createMessage(`${flag}\n${res.text}`);
-        }
-        msg.channel.createMessage({ embed: {
-          color: 0xFFFFFF, description: `${flag} ${res.text}`
-        }});
-      }).catch(err => { console.error(err) });
-    }
-    function funTranslation(text, emoji){
-      if(text == "" || text == null || text == undefined || text.includes("<!DOCTYPE")) return msg.channel.createMessage("Translation failed.");
-      if (text.length > 200) { return msg.channel.createMessage(text); }
-      msg.channel.createMessage({ embed: {
-        color: 0xFFFFFF,
-        description: emoji+" "+text
-      }});
-    }
-    function languageDetection(string) {
-      if(string == "" || string == null || string == undefined) return msg.channel.createMessage("Nothing to analyze!");
-      translate(string).then((res)=>{
-        return msg.channel.createMessage({embed: {color:0xFFFFFF, fields: [{ name: "Detected Language", value: lang[res.from.language.iso] }] } })
-      }).catch(err => { console.error(err) });
-    }
-  }
-  async function tsChannels() {
-    if(!msg.channel.topic) return
-    if(!msg.channel.topic.toLowerCase().startsWith("ts-")) return
-    let tsChannels = []
-    msg.channel.guild.channels.map(c => {
-      if(c.topic) {
-        if(c.topic.toLowerCase().startsWith("ts-")) tsChannels.push({topic: c.topic, id: c.id})
-      }
-    })
-    for(i = 0; i < tsChannels.length; i++) {
-      let channelLangReg = /(?<=ts\-)\S+/i;
-      let channelLang = channelLangReg.exec(tsChannels[i].topic.toLowerCase());
-      channelLang = channelLang[channelLang.length - 1]
-      for (let l in langs) {
-        for (let a in langs[l].alias) {
-          if(langs[l].alias[a] === channelLang) {
-            tsChannelTranslate(l, msg.content, `:flag_${langs[l].flag}:`, msg.channel.id, tsChannels[i].id)
-          }
-        }
-      }
-    }
-    function tsChannelTranslate(lang, string, flag, sourceChannel, targetChannel) {
-      if(string == "" || string == null || string == undefined) return;
-      if(targetChannel !== sourceChannel) {
-        translate(string, { to: lang }).then(res => {
-          if (res.text.length > 200) {
-            bot.createMessage(targetChannel, `**${msg.author.username}#${msg.author.discriminator}**: ${res.text}`);
-          } else {
-            bot.createMessage(targetChannel, { embed: {
-              color: 0xFFFFFF, description: `${flag} ${res.text}`, author: {name: `${msg.author.username}#${msg.author.discriminator}`, icon_url: msg.author.avatarURL ? msg.author.avatarURL : msg.author.defaultAvatarURL}
-            }});
-          }
-        }).catch(err => console.error(err) );
-      }
-    }
-  }
-});
-*/
 
 
 
