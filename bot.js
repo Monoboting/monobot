@@ -2,19 +2,19 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 //translator
-const fs = require("fs")
-const Eris = require("eris")
-const OS = require("os")
+const fs = require("fs");
+const Eris = require("eris");
+const OS = require("os");
 const translate = require("google-translate-api")
-const lang = require("./langs.json")
-const prefix = "m!"
-const G = require("gizoogle")
-const zalgo = require("to-zalgo")
-const flip = require("flipout")
-const kpop = require("kpop")
-const japanese = require("japanese")
+const lang = require("./langs.json");
+const prefix = "m!";
+const G = require("gizoogle");
+const zalgo = require("to-zalgo");
+const flip = require("flipout");
+const kpop = require("kpop");
+const japanese = require("japanese");
 const ostb = require("os-toolbox");
-const langs = require("./langmap.json")
+const langs = require("./langmap.json");
 
 
 // Get the text file and load it into a variable.
