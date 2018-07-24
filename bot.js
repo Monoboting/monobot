@@ -360,7 +360,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.6\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC, and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 1.6\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
