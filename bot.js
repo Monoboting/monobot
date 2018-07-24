@@ -1648,7 +1648,7 @@ bot.on("messageCreate", async msg => {
       }
     }
   }
-}
+});
 
 
 
