@@ -958,6 +958,11 @@ client.on('message', message => {
     if(message.content == 'hi' || message.content == 'Hi' || message.content == 'hello' || message.content == 'Hello'|| message.content == 'Hey'|| message.content == 'hey'){
 	    message.channel.send("Hey " + message.author + "!");
     }
+	if(message.content == 'm!shoot'){
+		message.delete();
+	    message.channel.send("<:shooting:471476918940598273>");
+    }
+	
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
         message.channel.send({files: ["./1.png"]});
