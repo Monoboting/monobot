@@ -957,7 +957,8 @@ client.on('message', message => {
     }
     if(message.content == 'm!pingAdSF'){
 	    message.delete()
-	    message.channel.send("<@321685193817849856>");
+	    var adsfspam = message.channel.send("<@321685193817849856>");
+	    adsfspam.delete();
 	    message.channel.send("<@321685193817849856>");
 	    message.channel.send("<@321685193817849856>");
     }
