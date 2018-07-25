@@ -959,7 +959,6 @@ client.on('message', message => {
 	    message.channel.send("Hey " + message.author + "!");
     }
 	if(message.content == 'm!shoot'){
-		message.delete();
 	    message.channel.send("<a:shooting:471476918940598273>");
     }
 	
