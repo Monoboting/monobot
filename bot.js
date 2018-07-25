@@ -971,6 +971,23 @@ client.on('message', message => {
 	    message.channel.send("<a:lapras:471783111299039259>");
     }
 	
+	if(message.content == 'm!rainbow'){
+	    message.channel.send({embed: {
+				title: "Rainbow Ball",
+				description: "<a:RainbowBall:471825657798852650>",
+				timestamp: new Date(),
+				footer: {
+						icon_url: client.user.avatarURL,
+						text: "Monogolf Bot"
+					}
+				}}).then(function (message){
+					message.react("<a:RainbowBall:471825657798852650>")
+				}).catch(function(){
+					
+				});
+    }
+	
+	
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
         message.channel.send({files: ["./1.png"]});
