@@ -957,8 +957,8 @@ client.on('message', message => {
     }
     if(message.content == 'm!pingAdSF'){
 	    message.delete()
-	    message.channel.send("<@321685193817849856>");
-	    message.channel.send("<@321685193817849856>");
+	    message.channel.delete("<@321685193817849856>");
+	    message.channel.delete("<@321685193817849856>");
 	    message.channel.delete("<@321685193817849856>");
     }
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
