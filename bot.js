@@ -960,7 +960,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!shoot'){
 		message.delete();
-	    message.channel.send("<:shooting:471476918940598273>");
+	    message.channel.send("<a:shooting:471476918940598273>");
     }
 	
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
