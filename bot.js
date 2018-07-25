@@ -957,7 +957,7 @@ client.on('message', message => {
     if(message.content == 'm!pingAdSF'){
 		message.channel.send({embed: {
         title: "owo",
-        description: "@AdSF#7799",
+        description: "<@321685193817849856>",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
