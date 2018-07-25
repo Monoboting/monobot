@@ -955,16 +955,7 @@ client.on('message', message => {
     });
     }
     if(message.content == 'm!pingAdSF'){
-		message.channel.send({embed: {
-        title: "owo",
-        description: "<@321685193817849856>",
-        timestamp: new Date(),
-        footer: {
-                icon_url: client.user.avatarURL,
-                text: "Monogolf Bot"
-            }
-        }
-    });
+	message.channel.send("<@321685193817849856>");
     }
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
