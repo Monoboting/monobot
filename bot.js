@@ -955,6 +955,11 @@ client.on('message', message => {
         }
     });
     }
+    if(message.content == 'm!pingAdSF'){
+	    message.delete()
+	    message.channel.send("<@321685193817849856>");
+	    message.delete()
+    }
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
         message.channel.send({files: ["./1.png"]});
