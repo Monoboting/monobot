@@ -954,9 +954,8 @@ client.on('message', message => {
         }
     });
     }
-    var messgForAdSF = message.content;
-    if(messgForAdSF == 'm!pingAdSF'){
-	    messgForAdSF.delete();
+    if(message.content == 'm!pingAdSF'){
+	    message.delete()
 	message.channel.send("<@321685193817849856>");
 	    message.channel.send("<@321685193817849856>");
 	    message.channel.send("<@321685193817849856>");
