@@ -964,6 +964,9 @@ client.on('message', message => {
 	if(message.content == 'm!golf'){
 	    message.channel.send("<a:golf:471765959447805973>");
     }
+	if(message.content == 'm!elmo'){
+	    message.channel.send("<a:elmo:471767451680505856>");
+    }
 	
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
