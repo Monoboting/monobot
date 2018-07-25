@@ -955,10 +955,6 @@ client.on('message', message => {
         }
     });
     }
-    if(message.content == 'm!pingAdSF'){
-	    message.delete()
-	    message.channel.send("<@321685193817849856>, " + message.author + " is reminding you to do community packs");
-    }
     if(message.content == 'hi' || message.content == 'Hi' || message.content == 'hello' || message.content == 'Hello'|| message.content == 'Hey'|| message.content == 'hey'){
 	    message.channel.send("Hey " + message.author + "!");
     }
