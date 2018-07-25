@@ -943,6 +943,7 @@ client.on('message', message => {
 	}});
     }
     if(message.content == 'm!owo'){
+	    message.delete()
 		message.channel.send({embed: {
         title: "owo",
         description: "owo",
