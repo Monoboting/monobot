@@ -360,7 +360,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.6\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 1.7\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -371,8 +371,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.6:",
-        description: "NEW COMMAND UPDATE:\n Fun Command: m!ball\nSuggested by: DJ Lapras\nIf you have any suggestion on any fun commands, dm @AdSF or @Jek or any of the mods and it might be added\nEnjoy! ;)",
+        title: "V 1.7:",
+        description: "UPDATED COMMAND:\n m!meme -> provides a monogolf meme submitted by users!\n49 memes so far!\n(send your memes by dm'ing @AdSF or @Jek or the mods and your meme will be added)\nENJOY!)",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -738,7 +738,7 @@ client.on('message', message => {
 	}
 	if(message.content == 'm!meme'){
 		var rerndammerme = Math.random();
-		var nermmerme = 41;
+		var nermmerme = 49;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
 		else if (rerndammerme <= 2/nermmerme)
@@ -821,6 +821,22 @@ client.on('message', message => {
 			rerndammerme = 40;
 		else if (rerndammerme <= 41/nermmerme)
 			rerndammerme = 41;
+		else if (rerndammerme <= 42/nermmerme)
+			rerndammerme = 42;
+		else if (rerndammerme <= 43/nermmerme)
+			rerndammerme = 43;
+		else if (rerndammerme <= 44/nermmerme)
+			rerndammerme = 44;
+		else if (rerndammerme <= 45/nermmerme)
+			rerndammerme = 45;
+		else if (rerndammerme <= 46/nermmerme)
+			rerndammerme = 46;
+		else if (rerndammerme <= 47/nermmerme)
+			rerndammerme = 47;
+		else if (rerndammerme <= 48/nermmerme)
+			rerndammerme = 48;
+		else if (rerndammerme <= 49/nermmerme)
+			rerndammerme = 49;
 		
 		if (rerndammerme == 1 || rerndammerme == 2)
 			message.channel.send("Meme is made by Mr.MarioOdyssey");
@@ -834,7 +850,7 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Ctrl+Alt");
 		if (rerndammerme == 7 || rerndammerme == 8 || rerndammerme == 11)
 			message.channel.send("Meme is made by ©Geo®™");
-		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41 || rerndammerme == 26 || rerndammerme == 42|| rerndammerme == 41|| rerndammerme == 41 )
+		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41 || rerndammerme == 26 || rerndammerme == 42|| rerndammerme == 43|| rerndammerme == 44 || || rerndammerme == 45 || rerndammerme == 47 || rerndammerme == 48 || rerndammerme == 49)
 			message.channel.send("Meme is made by DJ Lapras");
 		if (rerndammerme == 13)
 			message.channel.send("Meme is made by emisv stonk");
@@ -850,8 +866,15 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Buckbuckchick");
 		if (rerndammerme == 29 || rerndammerme == 30)
 			message.channel.send("Meme is made by Flipcakez");
+		if (rerndammerme == 46)
+			message.channel.send("Meme is made by MicaelPlays");
 		
         message.channel.send({files: ["./meme"+ rerndammerme +".jpg"]});
+    }
+	if(message.content == 'm!legend'){
+		message.channel.send("Legendary Meme");
+		
+        message.channel.send({files: ["./legend.jpg"]});
     }
     if(message.content == 'm!lb classic'){
 		message.channel.send({embed: {
