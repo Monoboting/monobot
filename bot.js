@@ -912,6 +912,18 @@ client.on('message', message => {
 		}
 		});
 	}
+	if(message.content == 'm!glock'){
+		message.channel.send({embed: {
+		title: "MONOGLOCK",
+		description: "<:ak471:472154846049337354><:ak472:47141426035477709472155187436453898>",
+		timestamp: new Date(),
+		footer: {
+				icon_url: client.user.avatarURL,
+				text: "Monogolf Bot"
+			}
+		}
+		});
+	}
     if(message.content == 'm!ball'){
 	    var ranNerm = 0;
 	    do {
