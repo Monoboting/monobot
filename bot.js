@@ -955,9 +955,6 @@ client.on('message', message => {
         }
     });
     }
-    if(message.content == 'hi' || message.content == 'Hi' || message.content == 'hello' || message.content == 'Hello'|| message.content == 'Hey'|| message.content == 'hey'){
-	    message.channel.send("Hey " + message.author + "!");
-    }
 	if(message.content == 'm!shoot'){
 	    message.channel.send("<a:shooting:471476918940598273>");
     }
