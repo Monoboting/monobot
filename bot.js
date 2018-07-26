@@ -987,6 +987,22 @@ client.on('message', message => {
 				});
     }
 	
+	if(message.content == 'm!transparent'){
+	    message.channel.send({embed: {
+				title: "Transparent Ball",
+				description: "<:transparentBall:471830753718697997>",
+				timestamp: new Date(),
+				footer: {
+						icon_url: client.user.avatarURL,
+						text: "Monogolf Bot"
+					}
+				}}).then(function (message){
+					message.react("<:transparentBall:471830753718697997>")
+				}).catch(function(){
+					
+				});
+    }
+	
 	
     if(message.content == 'm!solve arcade 1' || message.content == 'm!solve 1' || message.content == 'm!solve arcade 151' || message.content == 'm!solve 151' || message.content == 'm!solve arcade 301' || message.content == 'm!solve 301'){
         message.channel.send("Arcade Level 1");
