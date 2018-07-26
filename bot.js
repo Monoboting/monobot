@@ -889,40 +889,13 @@ client.on('message', message => {
 		});
     }
     if(message.content == 'm!gun'){
-		message.channel.send({embed: {
-		title: "MONOGUN",
-		description: "<:gun1:471054081809448960><:gun2:471054082061107211><:gun3:471054078751932416><:gun4:471054075967045633>",
-		timestamp: new Date(),
-		footer: {
-				icon_url: client.user.avatarURL,
-				text: "Monogolf Bot"
-			}
-		}
-		});
+		message.channel.send("<:gun1:471054081809448960><:gun2:471054082061107211><:gun3:471054078751932416><:gun4:471054075967045633>");
 	}
 	if(message.content == 'm!glock'){
-		message.channel.send({embed: {
-		title: "MONOGLOCK",
-		description: "<:glock1:471414267711586314><:glock2:471414260354777090><:glock3:471414244089397258>\n<:glock4:471414263458562058>",
-		timestamp: new Date(),
-		footer: {
-				icon_url: client.user.avatarURL,
-				text: "Monogolf Bot"
-			}
-		}
-		});
+		message.channel.send( "<:glock1:471414267711586314><:glock2:471414260354777090><:glock3:471414244089397258>\n<:glock4:471414263458562058>");
 	}
 	if(message.content == 'm!ak-47'){
-		message.channel.send({embed: {
-		title: "MONOGLOCK",
-		description: "<:ak472:472154846049337354><:ak471:472155187436453898>",
-		timestamp: new Date(),
-		footer: {
-				icon_url: client.user.avatarURL,
-				text: "Monogolf Bot"
-			}
-		}
-		});
+		message.channel.send("<:ak472:472154846049337354><:ak471:472155187436453898>");
 	}
     if(message.content == 'm!ball'){
 	    var ranNerm = 0;
