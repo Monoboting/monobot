@@ -912,7 +912,7 @@ client.on('message', message => {
 		}
 		});
 	}
-	if(message.content == 'm!glock'){
+	if(message.content == 'm!ak-47'){
 		message.channel.send({embed: {
 		title: "MONOGLOCK",
 		description: "<:ak471:472154846049337354><:ak472:47141426035477709472155187436453898>",
