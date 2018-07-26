@@ -981,7 +981,7 @@ client.on('message', message => {
 						text: "Monogolf Bot"
 					}
 				}}).then(function (message){
-					message.react(<a:RainbowBall:471825657798852650>)
+					message.react("<a:RainbowBall:471825657798852650>")
 				}).catch(function(){
 					
 				});
