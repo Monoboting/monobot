@@ -834,7 +834,7 @@ client.on('message', message => {
 			message.channel.send("Meme is made by Ctrl+Alt");
 		if (rerndammerme == 7 || rerndammerme == 8 || rerndammerme == 11)
 			message.channel.send("Meme is made by ©Geo®™");
-		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41 || rerndammerme == 26 )
+		if (rerndammerme == 9 || rerndammerme == 10 || rerndammerme == 12 || rerndammerme == 41 || rerndammerme == 26 || rerndammerme == 42|| rerndammerme == 41|| rerndammerme == 41 )
 			message.channel.send("Meme is made by DJ Lapras");
 		if (rerndammerme == 13)
 			message.channel.send("Meme is made by emisv stonk");
