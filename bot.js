@@ -61,16 +61,16 @@ const berllzNerm = {
 	20 : "Brown Ball"
 };
 const custermberllz = {
-	: "<:cyanglow:>",
-	1 : "<:greenandyellow:>",
-	2 : "<:redyellowduo:>",
-	3 : "<:leprasball:>"
+1 : "<:cyanglow:>",
+2 : "<:greenandyellow:>",
+3 : "<:redyellowduo:>",
+4 : "<:leprasball:>"
 };
 const custermberllzNerm = {
-	0 : "Cyan Glow Ball",
-	1 : "Green and Yellow Ball",
-	2 : "Red-Yellow-Duo Ball",
-	3 : "Lepras Ball"
+1 : "Cyan Glow Ball",
+2 : "Green and Yellow Ball",
+3 : "Red-Yellow-Duo Ball",
+4 : "Lepras Ball"
 };
 
 
@@ -967,6 +967,22 @@ client.on('message', message => {
 		var nermmerme = 4;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
+                else if (rerndammerme <= 2/nermmerme)
+			rerndammerme = 2;
+                else if (rerndammerme <= 3/nermmerme)
+			rerndammerme = 3;
+                else if (rerndammerme <= 4/nermmerme)
+			rerndammerme = 4;
+		message.channel.send({embed: {
+	title: "" + custermberllzNerm[ranNerm] + "",
+	description: "" + custermberllz[ranNerm] + "",
+	timestamp: new Date(),
+	footer: {
+			icon_url: client.user.avatarURL,
+			text: "Monogolf Bot"
+		}
+	}});
+     }
 	
     if(message.content == 'm!owo'){
 	    message.delete()
