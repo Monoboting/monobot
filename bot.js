@@ -61,10 +61,10 @@ const berllzNerm = {
 	20 : "Brown Ball"
 };
 const custermberllz = {
-1 : "<:cyanglow:>",
-2 : "<:greenandyellow:>",
-3 : "<:redyellowduo:>",
-4 : "<:leprasball:>"
+1 : "<:cyanglow:472470483187662849>",
+2 : "<:greenandyellow:472470483606962176>",
+3 : "<:redyellowduo:472470484227850240>",
+4 : "<:leprasball:472473214858166282>"
 };
 const custermberllzNerm = {
 1 : "Cyan Glow Ball",
