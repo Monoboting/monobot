@@ -372,7 +372,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.7\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 1.8\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -383,8 +383,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.7:",
-        description: "UPDATED COMMAND:\n m!meme -> provides a monogolf meme submitted by users!\n49 memes so far!\n(send your memes by dm'ing @AdSF or @Jek or the mods and your meme will be added)\nENJOY!)",
+        title: "V 1.8:",
+        description: "NEW COMMAND:\n m!ball custom -> provides a random custom ball submitted by users!\n4 balls so far!\n(send your balls by dm'ing @AdSF or @Jek or the mods and your ball will be added)\nENJOY!)",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
