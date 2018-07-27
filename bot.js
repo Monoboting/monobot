@@ -60,6 +60,18 @@ const berllzNerm = {
 	19 : "Cool Ball",
 	20 : "Brown Ball"
 };
+const custermberllz = {
+	: "<:cyanglow:>",
+	1 : "<:greenandyellow:>",
+	2 : "<:redyellowduo:>",
+	3 : "<:leprasball:>"
+};
+const custermberllzNerm = {
+	0 : "Cyan Glow Ball",
+	1 : "Green and Yellow Ball",
+	2 : "Red-Yellow-Duo Ball",
+	3 : "Lepras Ball"
+};
 
 
 client.on('ready', ()  =>{
@@ -950,6 +962,12 @@ client.on('message', message => {
 		}
 	}});
     }
+	if(message.content == 'm!ball custom'){
+		var rerndammerme = Math.random();
+		var nermmerme = 4;
+		if (rerndammerme <= 1/nermmerme)
+			rerndammerme = 1;
+	
     if(message.content == 'm!owo'){
 	    message.delete()
 		message.channel.send({embed: {
