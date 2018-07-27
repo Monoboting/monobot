@@ -974,8 +974,8 @@ client.on('message', message => {
                 else if (rerndammerme <= 4/nermmerme)
 			rerndammerme = 4;
 		message.channel.send({embed: {
-	title: "" + custermberllzNerm[ranNerm] + "",
-	description: "" + custermberllz[ranNerm] + "",
+	title: "" + custermberllzNerm[rerndammerme] + "",
+	description: "" + custermberllz[rerndammerme] + "",
 	timestamp: new Date(),
 	footer: {
 			icon_url: client.user.avatarURL,
