@@ -963,8 +963,8 @@ client.on('message', message => {
 	}});
     }
 	if(message.content == 'm!ball custom'){
-		var rerndammerme = Math.random();
-		var nermmerme = 4;
+		rerndammerme = Math.random();
+		nermmerme = 4;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
                 else if (rerndammerme <= 2/nermmerme)
