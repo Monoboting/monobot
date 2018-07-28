@@ -67,10 +67,10 @@ const custermberllz = {
 4 : "<:leprasball:472473214858166282>"
 };
 const custermberllzNerm = {
-1 : "Cyan Glow Ball",
-2 : "Green and Yellow Ball",
-3 : "Red-Yellow-Duo Ball",
-4 : "Lepras Ball"
+1 : "Cyan Glow Ball - ChaotiC",
+2 : "Green and Yellow Ball - ChaotiC",
+3 : "Red-Yellow-Duo Ball - ChaotiC",
+4 : "Lepras Ball - DJ Lapras"
 };
 
 
