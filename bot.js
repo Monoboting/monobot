@@ -71,7 +71,15 @@ const custermberllzNerm = {
 2 : "Green and Yellow Ball - ChaotiC",
 3 : "Red-Yellow-Duo Ball - ChaotiC",
 4 : "Lepras Ball - DJ Lapras",
-5 : "Lime Ball - Woomy on a vroomy"
+5 : "Lime Ball - Woomy on a vroomy",
+6 : "Two Health Bars Ball - SSeptic",
+7 : "Now Kiss Ball - ASeptic",
+8 : "Volvox Ball - Volvox",
+9 : "Emerald Ball - Volvox",
+10 : "Magnetic Ball - BuckBuckBuck",
+11 : "Blue Yarn Ball - BuckBuckBuck",
+12 : "Solar Ball - WindMasterv1",
+13 : "Pixel Fire Ball - YeetOrBeYeeten"
 };
 
 
