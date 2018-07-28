@@ -83,7 +83,7 @@ const custermberllzNerm = {
 4 : "Lepras Ball - DJ Lapras",
 5 : "Lime Ball - Woomy on a vroomy",
 6 : "Two Health Bars Ball - SSeptic",
-7 : "Now Kiss Ball - ASeptic",
+7 : "Now Kiss Ball - SSeptic",
 8 : "Volvox Ball - Volvox",
 9 : "Emerald Ball - Volvox",
 10 : "Magnetic Ball - BuckBuckBuck",
