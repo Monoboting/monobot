@@ -70,7 +70,8 @@ const custermberllzNerm = {
 1 : "Cyan Glow Ball - ChaotiC",
 2 : "Green and Yellow Ball - ChaotiC",
 3 : "Red-Yellow-Duo Ball - ChaotiC",
-4 : "Lepras Ball - DJ Lapras"
+4 : "Lepras Ball - DJ Lapras",
+5 : "Lime Ball - Woomy on a vroomy"
 };
 
 
