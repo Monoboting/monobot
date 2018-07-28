@@ -64,7 +64,17 @@ const custermberllz = {
 1 : "<:cyanglow:472470483187662849>",
 2 : "<:greenandyellow:472470483606962176>",
 3 : "<:redyellowduo:472470484227850240>",
-4 : "<:leprasball:472473214858166282>"
+4 : "<:leprasball:472473214858166282>",
+5 : "<:LimeBall:472604665440239616>",
+6 : "<:TwoHealthBars:472603868526673930>",
+7 : "<:NowKiss:472604666014990337>",
+8 : "<:Volvox:472775593650421761>",
+9 : "<:Emerald:472775374514683920>",
+10 : "<:MagneticBall:472877231077720074>",
+11 : "<:BlueYarnBall:472878239107252274>",
+12 : "<:SolarBall:472878238050549780>",
+13 : "<:PixelFire:472877228427051018>",
+14 : "<:DiscordBall:472605819054325761>"
 };
 const custermberllzNerm = {
 1 : "Cyan Glow Ball - ChaotiC",
@@ -79,7 +89,8 @@ const custermberllzNerm = {
 10 : "Magnetic Ball - BuckBuckBuck",
 11 : "Blue Yarn Ball - BuckBuckBuck",
 12 : "Solar Ball - WindMasterv1",
-13 : "Pixel Fire Ball - YeetOrBeYeeten"
+13 : "Pixel Fire Ball - YeetOrBeYeeten",
+14 : "Discord Bot - Jek"
 };
 
 
@@ -381,7 +392,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.8\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 1.9\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -392,8 +403,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.8:",
-        description: "NEW COMMAND:\n m!ball custom -> provides a random custom ball submitted by users!\n4 balls so far!\n(send your balls by dm'ing @AdSF or @Jek or the mods and your ball will be added)\nENJOY!)",
+        title: "V 1.9:",
+        description: "UPDATED COMMANDS:\n1- m!ball custom -> provides a random custom ball submitted by users!\n14 balls so far!\n(send your balls by dm'ing @AdSF or @Jek or the mods and your ball will be added)\nENJOY!)\n2- m!meme -> provides a random meme submitted by users!\n50 memes so far!\n(send your memes by dm'ing @AdSF or @Jek or the mods and your memes will be added)\nENJOY!)",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -759,7 +770,7 @@ client.on('message', message => {
 	}
 	if(message.content == 'm!meme'){
 		var rerndammerme = Math.random();
-		var nermmerme = 49;
+		var nermmerme = 50;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
 		else if (rerndammerme <= 2/nermmerme)
@@ -858,6 +869,8 @@ client.on('message', message => {
 			rerndammerme = 48;
 		else if (rerndammerme <= 49/nermmerme)
 			rerndammerme = 49;
+		else if (rerndammerme <= 50/nermmerme)
+			rerndammerme = 50;
 		
 		if (rerndammerme == 1 || rerndammerme == 2)
 			message.channel.send("Meme is made by Mr.MarioOdyssey");
@@ -877,6 +890,8 @@ client.on('message', message => {
 			message.channel.send("Meme is made by emisv stonk");
 		if (rerndammerme == 14)
 			message.channel.send("Meme is made by bolis");
+		if (rerndammerme == 50)
+			message.channel.send("Meme is made by Geogolf");
 		if (rerndammerme == 33)
 			message.channel.send("Meme is made by Woomy on a vroomy");
 		if (rerndammerme == 20 || rerndammerme == 21|| rerndammerme == 23|| rerndammerme == 24|| rerndammerme == 25 || rerndammerme == 27 || rerndammerme == 28 || rerndammerme == 31 || rerndammerme == 32)
@@ -973,7 +988,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!ball custom'){
 		rerndammerme = Math.random();
-		nermmerme = 4;
+		nermmerme = 14;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
                 else if (rerndammerme <= 2/nermmerme)
@@ -982,6 +997,26 @@ client.on('message', message => {
 			rerndammerme = 3;
                 else if (rerndammerme <= 4/nermmerme)
 			rerndammerme = 4;
+		else if (rerndammerme <= 5/nermmerme)
+			rerndammerme = 5;
+		else if (rerndammerme <= 6/nermmerme)
+			rerndammerme = 6;
+		else if (rerndammerme <= 7/nermmerme)
+			rerndammerme = 7;
+		else if (rerndammerme <= 8/nermmerme)
+			rerndammerme = 8;
+		else if (rerndammerme <= 9/nermmerme)
+			rerndammerme = 9;
+		else if (rerndammerme <= 10/nermmerme)
+			rerndammerme = 10;
+		else if (rerndammerme <= 11/nermmerme)
+			rerndammerme = 11;
+		else if (rerndammerme <= 12/nermmerme)
+			rerndammerme = 12;
+		else if (rerndammerme <= 13/nermmerme)
+			rerndammerme = 13;
+		else if (rerndammerme <= 14/nermmerme)
+			rerndammerme = 14;
 		message.channel.send({embed: {
 	title: "" + custermberllzNerm[rerndammerme] + "",
 	description: "" + custermberllz[rerndammerme] + "",
