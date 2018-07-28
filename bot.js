@@ -90,7 +90,7 @@ const custermberllzNerm = {
 11 : "Blue Yarn Ball - BuckBuckBuck",
 12 : "Solar Ball - WindMasterv1",
 13 : "Pixel Fire Ball - YeetOrBeYeeten",
-14 : "Discord Bot - Jek"
+14 : "Discord Ball - Jek"
 };
 
 
