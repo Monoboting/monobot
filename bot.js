@@ -73,7 +73,7 @@ const custermberllz = {
 10 : "<:MagneticBall:472877231077720074>",
 11 : "<:BlueYarnBall:472878239107252274>",
 12 : "<:SolarBall:472878238050549780>",
-13 : "<:PixelFire:472877228427051018>",
+13 : "<a:PixelFire:472877228427051018>",
 14 : "<:DiscordBall:472605819054325761>"
 };
 const custermberllzNerm = {
