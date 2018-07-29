@@ -86,8 +86,8 @@ const custermberllzNerm = {
 7 : "Now Kiss Ball - SSeptic",
 8 : "Volvox Ball - Volvox",
 9 : "Emerald Ball - Volvox",
-10 : "Magnetic Ball - BuckBuckBuck",
-11 : "Blue Yarn Ball - BuckBuckBuck",
+10 : "Magnetic Ball - buckbuckchick",
+11 : "Blue Yarn Ball - buckbuckchick",
 12 : "Solar Ball - WindMasterv1",
 13 : "Pixel Fire Ball - YeetOrBeYeeten",
 14 : "Discord Ball - Jek"
