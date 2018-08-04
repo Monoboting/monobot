@@ -992,7 +992,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!ball custom'){
 		rerndammerme = Math.random();
-		nermmerme = 14;
+		nermmerme = 16;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
                 else if (rerndammerme <= 2/nermmerme)
