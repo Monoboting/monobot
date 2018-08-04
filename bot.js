@@ -92,7 +92,9 @@ const custermberllzNerm = {
 11 : "Blue Yarn Ball - buckbuckchick",
 12 : "Solar Ball - WindMasterv1",
 13 : "Pixel Fire Ball - YeetOrBeYeeten",
-14 : "Discord Ball - Jek"
+14 : "Discord Ball - Jek",
+15 : "Disk Ball - buckbuckchick",
+16 : "Spin Ball - SSeptic"
 };
 
 
@@ -1019,6 +1021,10 @@ client.on('message', message => {
 			rerndammerme = 13;
 		else if (rerndammerme <= 14/nermmerme)
 			rerndammerme = 14;
+		else if (rerndammerme <= 15/nermmerme)
+			rerndammerme = 15;
+		else if (rerndammerme <= 16/nermmerme)
+			rerndammerme = 16;
 		message.channel.send({embed: {
 	title: "" + custermberllzNerm[rerndammerme] + "",
 	description: "" + custermberllz[rerndammerme] + "",
