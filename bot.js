@@ -76,7 +76,7 @@ const custermberllz = {
 13 : "<a:PixelFire:472877228427051018>",
 14 : "<:DiscordBall:472605819054325761>",
 15 : "<:DiscBall:475374760017264641>",
-16 : "<:spin:475375364630249472>"
+16 : "<a:spin:475375364630249472>"
 };
 const custermberllzNerm = {
 1 : "Cyan Glow Ball - ChaotiC",
