@@ -1048,6 +1048,7 @@ client.on('message', message => {
             }
         }
     });
+	    }
 	    if(message.content == 'm!oof'){
 	    message.delete();
 		message.channel.send("<:oof:475373616876224535>");
