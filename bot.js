@@ -99,7 +99,7 @@ const custermberllzNerm = {
 15 : "Disk Ball - buckbuckchick",
 16 : "Spin Ball - SSeptic",
 17 : "4G Ball - MicaelPlays",
-18 : "E Ball - Sweet-bix",
+18 : "E Ball - Weet-bix",
 19 : "Happy Ball - G0LEM"
 };
 
