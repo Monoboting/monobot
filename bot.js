@@ -100,7 +100,7 @@ const custermberllzNerm = {
 16 : "Spin Ball - SSeptic",
 17 : "4G Ball - MicaelPlays",
 18 : "E Ball - Sweet-bix",
-19 : "Happy Ball - "
+19 : "Happy Ball - G0LEM"
 };
 
 
@@ -998,7 +998,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!ball custom'){
 		rerndammerme = Math.random();
-		nermmerme = 16;
+		nermmerme = 19;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
                 else if (rerndammerme <= 2/nermmerme)
@@ -1031,6 +1031,12 @@ client.on('message', message => {
 			rerndammerme = 15;
 		else if (rerndammerme <= 16/nermmerme)
 			rerndammerme = 16;
+		else if (rerndammerme <= 17/nermmerme)
+			rerndammerme = 17;
+		else if (rerndammerme <= 18/nermmerme)
+			rerndammerme = 18;
+		else if (rerndammerme <= 19/nermmerme)
+			rerndammerme = 19;
 		message.channel.send({embed: {
 	title: "" + custermberllzNerm[rerndammerme] + "",
 	description: "" + custermberllz[rerndammerme] + "",
