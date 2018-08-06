@@ -79,7 +79,7 @@ const custermberllz = {
 16 : "<a:spin:475375364630249472>",
 17 : "<:4GBall:475711204661395457>",
 18 : "<:EBall:475711206825394209>",
-19 : "<:HappyBall:475711725539295262>
+19 : "<:HappyBall:475711725539295262>"
 };
 const custermberllzNerm = {
 1 : "Cyan Glow Ball - ChaotiC",
