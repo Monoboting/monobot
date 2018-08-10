@@ -1064,11 +1064,11 @@ client.on('message', message => {
 	    if(message.content == 'm!oof'){
 	    message.delete();
 		message.channel.send("<:oof:475373616876224535>");
-    }
+    }/*
 	if(message.content == 'm!adsf'){
 	    message.delete();
 		message.channel.send("<@321685193817849856>");
-    }
+    }*/
 	if(message.content == 'm!shoot'){
 	    message.channel.send("<a:shooting:471476918940598273>");
     }
