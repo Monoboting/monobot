@@ -404,7 +404,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 1.9\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 2.0\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -415,8 +415,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 1.9:",
-        description: "UPDATED COMMANDS:\n1- m!ball custom -> provides a random custom ball submitted by users!\n14 balls so far!\n(send your balls by dm'ing @AdSF or @Jek or the mods and your ball will be added)\nENJOY!)\n2- m!meme -> provides a random meme submitted by users!\n50 memes so far!\n(send your memes by dm'ing @AdSF or @Jek or the mods and your memes will be added)\nENJOY!)",
+        title: "V 2.0:",
+        description: "Updates for Commands:\nm!ball custom: Now with 20 balls!\nm!meme: Now with 50 memes!\nm!protip: now with 26 protips!\nKeep sending us your balls, memes, and protips!\nNEW COMMAND IN V 2.0\nm!solve t [number]\nTesalia Pack Solutions are finally out! Go get some help from Monobot\nUPCOMING COMMANDS:\n- Monobot Game\n- Speedrun Leaderboards\n- More ideas suggested by you guys!\nHAVE FUN AND ENJOY!",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -772,6 +772,18 @@ client.on('message', message => {
 		message.channel.send({embed: {
 		title: "PROTIP #25:",
 		description: "Submitted by: Lafocade\nProTip: Love is important.",
+		timestamp: new Date(),
+		footer: {
+				icon_url: client.user.avatarURL,
+				text: "Monogolf Bot"
+			}
+		}
+		});
+	}
+	if(message.content == 'm!protip 26'){
+		message.channel.send({embed: {
+		title: "PROTIP #26:",
+		description: "Submitted by: AdSF\ProTip: Take your time to analise a level. There's no need to rush it.",
 		timestamp: new Date(),
 		footer: {
 				icon_url: client.user.avatarURL,
@@ -1734,6 +1746,428 @@ client.on('message', message => {
 	if(message.content == 'm!solve arcade 451' || message.content == 'm!solve 451'){
         message.channel.send("Arcade Level 451:\nIts a surprise ;)");
         //message.channel.send({files: ["./451.jpg"]});
+    }
+	//Tesalia
+    if(message.content == 'm!solve tesalia 1' || message.content == 'm!solve t 1'){
+        message.channel.send("Tesalia Level 1");
+        message.channel.send({files: ["./t1.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 2' || message.content == 'm!solve t 2'){
+        message.channel.send("Tesalia Level 2");
+        message.channel.send({files: ["./t2.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 3' || message.content == 'm!solve t 3'){
+        message.channel.send("Tesalia Level 3");
+        message.channel.send({files: ["./t3.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 4' || message.content == 'm!solve t 4'){
+        message.channel.send("Tesalia Level 4");
+        message.channel.send({files: ["./t4.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 5' || message.content == 'm!solve t 5'){
+        message.channel.send("Tesalia Level 5");
+        message.channel.send({files: ["./t5.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 6' || message.content == 'm!solve t 6'){
+        message.channel.send("Tesalia Level 6");
+        message.channel.send({files: ["./t6.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 7' || message.content == 'm!solve t 7'){
+        message.channel.send("Tesalia Level 7");
+        message.channel.send({files: ["./t7.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 8' || message.content == 'm!solve t 8'){
+        message.channel.send("Tesalia Level 8");
+        message.channel.send({files: ["./t8.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 9' || message.content == 'm!solve t 9'){
+        message.channel.send("Tesalia Level 9");
+        message.channel.send({files: ["./t9.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 10' || message.content == 'm!solve t 10'){
+        message.channel.send("Tesalia Level 10");
+        message.channel.send({files: ["./t10.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 11' || message.content == 'm!solve t 11'){
+        message.channel.send("Tesalia Level 11");
+        message.channel.send({files: ["./t11.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 12' || message.content == 'm!solve t 12'){
+        message.channel.send("Tesalia Level 12");
+        message.channel.send({files: ["./t12.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 13' || message.content == 'm!solve t 13'){
+        message.channel.send("Tesalia Level 13");
+        message.channel.send({files: ["./t13.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 14' || message.content == 'm!solve t 14'){
+        message.channel.send("Tesalia Level 14");
+        message.channel.send({files: ["./t14.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 15' || message.content == 'm!solve t 15'){
+        message.channel.send("Tesalia Level 15");
+        message.channel.send({files: ["./t15.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 16' || message.content == 'm!solve t 16'){
+        message.channel.send("Tesalia Level 16");
+        message.channel.send({files: ["./t16.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 17' || message.content == 'm!solve t 17'){
+        message.channel.send("Tesalia Level 17");
+        message.channel.send({files: ["./t17.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 18' || message.content == 'm!solve t 18'){
+        message.channel.send("Tesalia Level 18");
+        message.channel.send({files: ["./t18.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 19' || message.content == 'm!solve t 19'){
+        message.channel.send("Tesalia Level 19");
+        message.channel.send({files: ["./t19.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 20' || message.content == 'm!solve t 20'){
+        message.channel.send("Tesalia Level 20");
+        message.channel.send({files: ["./t20.jpg"]});
+    }
+	
+	if(message.content == 'm!solve tesalia 21' || message.content == 'm!solve t 21'){
+        message.channel.send("Tesalia Level 21");
+        message.channel.send({files: ["./t21.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 22' || message.content == 'm!solve t 22'){
+        message.channel.send("Tesalia Level 22");
+        message.channel.send({files: ["./t22.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 23' || message.content == 'm!solve t 23'){
+        message.channel.send("Tesalia Level 23");
+        message.channel.send({files: ["./t23.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 24' || message.content == 'm!solve t 24'){
+        message.channel.send("Tesalia Level 24");
+        message.channel.send({files: ["./t24.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 25' || message.content == 'm!solve t 25'){
+        message.channel.send("Tesalia Level 25");
+        message.channel.send({files: ["./t25.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 26' || message.content == 'm!solve t 26'){
+        message.channel.send("Tesalia Level 26");
+        message.channel.send({files: ["./t26.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 27' || message.content == 'm!solve t 27'){
+        message.channel.send("Tesalia Level 27");
+        message.channel.send({files: ["./t27.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 28' || message.content == 'm!solve t 28'){
+        message.channel.send("Tesalia Level 28");
+        message.channel.send({files: ["./t28.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 29' || message.content == 'm!solve t 29'){
+        message.channel.send("Tesalia Level 29");
+        message.channel.send({files: ["./t29.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 30' || message.content == 'm!solve t 30'){
+        message.channel.send("Tesalia Level 30");
+        message.channel.send({files: ["./t30.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 31' || message.content == 'm!solve t 31'){
+        message.channel.send("Tesalia Level 31");
+        message.channel.send({files: ["./t31.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 32' || message.content == 'm!solve t 32'){
+        message.channel.send("Tesalia Level 32");
+        message.channel.send({files: ["./t32.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 33' || message.content == 'm!solve t 33'){
+        message.channel.send("Tesalia Level 33");
+        message.channel.send({files: ["./t33.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 34' || message.content == 'm!solve t 34'){
+        message.channel.send("Tesalia Level 34");
+        message.channel.send({files: ["./t34.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 35' || message.content == 'm!solve t 35'){
+        message.channel.send("Tesalia Level 35");
+        message.channel.send({files: ["./t35.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 36' || message.content == 'm!solve t 36'){
+        message.channel.send("Tesalia Level 36");
+        message.channel.send({files: ["./t36.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 37' || message.content == 'm!solve t 37'){
+        message.channel.send("Tesalia Level 37");
+        message.channel.send({files: ["./t37.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 38' || message.content == 'm!solve t 38'){
+        message.channel.send("Tesalia Level 38");
+        message.channel.send({files: ["./t38.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 39' || message.content == 'm!solve t 39'){
+        message.channel.send("Tesalia Level 39");
+        message.channel.send({files: ["./t39.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 40' || message.content == 'm!solve t 40'){
+        message.channel.send("Tesalia Level 40");
+        message.channel.send({files: ["./t40.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 41' || message.content == 'm!solve t 41'){
+        message.channel.send("Tesalia Level 41");
+        message.channel.send({files: ["./t41.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 42' || message.content == 'm!solve t 42'){
+        message.channel.send("Tesalia Level 42");
+        message.channel.send({files: ["./t42.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 43' || message.content == 'm!solve t 43'){
+        message.channel.send("Tesalia Level 43");
+        message.channel.send({files: ["./t43.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 44' || message.content == 'm!solve t 44'){
+        message.channel.send("Tesalia Level 44");
+        message.channel.send({files: ["./t44.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 45' || message.content == 'm!solve t 45'){
+        message.channel.send("Tesalia Level 45");
+        message.channel.send({files: ["./t45.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 46' || message.content == 'm!solve t 46'){
+        message.channel.send("Tesalia Level 46");
+        message.channel.send({files: ["./t46.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 47' || message.content == 'm!solve t 47'){
+        message.channel.send("Tesalia Level 47");
+        message.channel.send({files: ["./t47.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 48' || message.content == 'm!solve t 48'){
+        message.channel.send("Tesalia Level 48");
+        message.channel.send({files: ["./t48.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 49' || message.content == 'm!solve t 49'){
+        message.channel.send("Tesalia Level 49");
+        message.channel.send({files: ["./t49.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 50' || message.content == 'm!solve t 50'){
+        message.channel.send("Tesalia Level 50");
+        message.channel.send({files: ["./t50.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 51' || message.content == 'm!solve t 51'){
+        message.channel.send("Tesalia Level 51");
+        message.channel.send({files: ["./t51.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 52' || message.content == 'm!solve t 52'){
+        message.channel.send("Tesalia Level 52");
+        message.channel.send({files: ["./t52.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 53' || message.content == 'm!solve t 53'){
+        message.channel.send("Tesalia Level 53");
+        message.channel.send({files: ["./t53.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 54' || message.content == 'm!solve t 54'){
+        message.channel.send("Tesalia Level 54");
+        message.channel.send({files: ["./t54.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 55' || message.content == 'm!solve t 55'){
+        message.channel.send("Tesalia Level 55");
+        message.channel.send({files: ["./t55.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 56' || message.content == 'm!solve t 56'){
+        message.channel.send("Tesalia Level 56");
+        message.channel.send({files: ["./t56.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 57' || message.content == 'm!solve t 57'){
+        message.channel.send("Tesalia Level 57\nUnknown Solution");
+        //message.channel.send({files: ["./t57.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 58' || message.content == 'm!solve t 58'){
+        message.channel.send("Tesalia Level 58");
+        message.channel.send({files: ["./t58.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 59' || message.content == 'm!solve t 59'){
+        message.channel.send("Tesalia Level 59");
+        message.channel.send({files: ["./t59.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 60' || message.content == 'm!solve t 60'){
+        message.channel.send("Tesalia Level 60");
+        message.channel.send({files: ["./t60.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 61' || message.content == 'm!solve t 61'){
+        message.channel.send("Tesalia Level 61");
+        message.channel.send({files: ["./t61.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 62' || message.content == 'm!solve t 62'){
+        message.channel.send("Tesalia Level 62");
+        message.channel.send({files: ["./t62.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 63' || message.content == 'm!solve t 63'){
+        message.channel.send("Tesalia Level 63");
+        message.channel.send({files: ["./t63.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 64' || message.content == 'm!solve t 64'){
+        message.channel.send("Tesalia Level 64");
+        message.channel.send({files: ["./t64.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 65' || message.content == 'm!solve t 65'){
+        message.channel.send("Tesalia Level 65");
+        message.channel.send({files: ["./t65.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 66' || message.content == 'm!solve t 66'){
+        message.channel.send("Tesalia Level 66");
+        message.channel.send({files: ["./t66.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 67' || message.content == 'm!solve t 67'){
+        message.channel.send("Tesalia Level 67");
+        message.channel.send({files: ["./t67.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 68' || message.content == 'm!solve t 68'){
+        message.channel.send("Tesalia Level 68");
+        message.channel.send({files: ["./t68.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 69' || message.content == 'm!solve t 69'){
+        message.channel.send("Tesalia Level 69");
+        message.channel.send({files: ["./t69.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 70' || message.content == 'm!solve t 70'){
+        message.channel.send("Tesalia Level 70");
+        message.channel.send({files: ["./t70.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 71' || message.content == 'm!solve t 71'){
+        message.channel.send("Tesalia Level 71");
+        message.channel.send({files: ["./t71.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 72' || message.content == 'm!solve t 72'){
+        message.channel.send("Tesalia Level 72");
+        message.channel.send({files: ["./t72.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 73' || message.content == 'm!solve t 73'){
+        message.channel.send("Tesalia Level 73");
+        message.channel.send({files: ["./t73.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 74' || message.content == 'm!solve t 74'){
+        message.channel.send("Tesalia Level 74");
+        message.channel.send({files: ["./t74.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 75' || message.content == 'm!solve t 75'){
+        message.channel.send("Tesalia Level 75");
+        message.channel.send({files: ["./t75.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 76' || message.content == 'm!solve t 76'){
+        message.channel.send("Tesalia Level 76");
+        message.channel.send({files: ["./t76.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 77' || message.content == 'm!solve t 77'){
+        message.channel.send("Tesalia Level 77");
+        message.channel.send({files: ["./t77.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 78' || message.content == 'm!solve t 78'){
+        message.channel.send("Tesalia Level 78\nUnknown Solution");
+        //message.channel.send({files: ["./t78.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 79' || message.content == 'm!solve t 79'){
+        message.channel.send("Tesalia Level 79");
+        message.channel.send({files: ["./t79.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 80' || message.content == 'm!solve t 80'){
+        message.channel.send("Tesalia Level 80");
+        message.channel.send({files: ["./t80.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 81' || message.content == 'm!solve t 81'){
+        message.channel.send("Tesalia Level 81");
+        message.channel.send({files: ["./t81.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 82' || message.content == 'm!solve t 82'){
+        message.channel.send("Tesalia Level 82");
+        message.channel.send({files: ["./t82.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 83' || message.content == 'm!solve t 83'){
+        message.channel.send("Tesalia Level 83");
+        message.channel.send({files: ["./t83.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 84' || message.content == 'm!solve t 84'){
+        message.channel.send("Tesalia Level 84");
+        message.channel.send({files: ["./t84.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 85' || message.content == 'm!solve t 85'){
+        message.channel.send("Tesalia Level 85");
+        message.channel.send({files: ["./t85.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 86' || message.content == 'm!solve t 86'){
+        message.channel.send("Tesalia Level 86");
+        message.channel.send({files: ["./t86.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 87' || message.content == 'm!solve t 87'){
+        message.channel.send("Tesalia Level 87");
+        message.channel.send({files: ["./t87.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 88' || message.content == 'm!solve t 88'){
+        message.channel.send("Tesalia Level 88");
+        message.channel.send({files: ["./t88.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 89' || message.content == 'm!solve t 89'){
+        message.channel.send("Tesalia Level 89");
+        message.channel.send({files: ["./t89.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 90' || message.content == 'm!solve t 90'){
+        message.channel.send("Tesalia Level 90");
+        message.channel.send({files: ["./t90.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 91' || message.content == 'm!solve t 91'){
+        message.channel.send("Tesalia Level 91");
+        message.channel.send({files: ["./t91.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 92' || message.content == 'm!solve t 92'){
+        message.channel.send("Tesalia Level 92");
+        message.channel.send({files: ["./t92.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 93' || message.content == 'm!solve t 93'){
+        message.channel.send("Tesalia Level 93");
+        message.channel.send({files: ["./t93.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 94' || message.content == 'm!solve t 94'){
+        message.channel.send("Tesalia Level 94");
+        message.channel.send({files: ["./t94.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 95' || message.content == 'm!solve t 95'){
+        message.channel.send("Tesalia Level 95");
+        message.channel.send({files: ["./t95.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 96' || message.content == 'm!solve t 96'){
+        message.channel.send("Tesalia Level 96\nUnknown Solution");
+        //message.channel.send({files: ["./t96.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 97' || message.content == 'm!solve t 97'){
+        message.channel.send("Tesalia Level 97\nUnknown Solution");
+        //message.channel.send({files: ["./t97.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 98' || message.content == 'm!solve t 98'){
+        message.channel.send("Tesalia Level 98");
+        message.channel.send({files: ["./t98.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 99' || message.content == 'm!solve t 99'){
+        message.channel.send("Tesalia Level 99\nUnknown Solution");
+        message.channel.send({files: ["./t99.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 100' || message.content == 'm!solve t 100'){
+        message.channel.send("Tesalia Level 100");
+        message.channel.send({files: ["./t100.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 101' || message.content == 'm!solve t 101'){
+        message.channel.send("Tesalia Level 101");
+        message.channel.send({files: ["./t101.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 102' || message.content == 'm!solve t 102'){
+        message.channel.send("Tesalia Level 102");
+        message.channel.send({files: ["./t102.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 103' || message.content == 'm!solve t 103'){
+        message.channel.send("Tesalia Level 103");
+        message.channel.send({files: ["./t103.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 104' || message.content == 'm!solve t 104'){
+        message.channel.send("Tesalia Level 104");
+        message.channel.send({files: ["./t104.jpg"]});
+    }
+	if(message.content == 'm!solve tesalia 105' || message.content == 'm!solve t 105'){
+        message.channel.send("Tesalia Level 105");
+        message.channel.send({files: ["./t105.jpg"]});
     }/*
     if(message.content.contains("m!s arcade")){
        var [] solArr = message.content.split[" "];
