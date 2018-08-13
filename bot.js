@@ -783,7 +783,7 @@ client.on('message', message => {
 	if(message.content == 'm!protip 26'){
 		message.channel.send({embed: {
 		title: "PROTIP #26:",
-		description: "Submitted by: AdSF\ProTip: Take your time to analise a level. There's no need to rush it.",
+		description: "Submitted by: AdSF\nProTip: Take your time to analise a level. There's no need to rush it.",
 		timestamp: new Date(),
 		footer: {
 				icon_url: client.user.avatarURL,
