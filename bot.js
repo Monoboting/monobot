@@ -80,7 +80,11 @@ const custermberllz = {
 17 : "<:4GBall:475711204661395457>",
 18 : "<:EBall:475711206825394209>",
 19 : "<:HappyBall:475711725539295262>",
-20 : "<:ArtBall:478412295438073857>"
+20 : "<:ArtBall:478412295438073857>",
+21 : "<:FlexTape:479675041622130750>", 
+22 : "<:owo:479674067981434917>",
+23 : "<:Atomic:479675178570350592>", 
+24 : "<:DeMonotised:479674048142376989>"
 };
 const custermberllzNerm = {
 1 : "Cyan Glow Ball - ChaotiC",
@@ -103,6 +107,10 @@ const custermberllzNerm = {
 18 : "E Ball - Weet-bix",
 19 : "Happy Ball - G0LEM",
 20 : "Art Ball - Lafocade"
+21 : "Flex Tape Ball - SSeptic", 
+22 : "OwO Ball - SSeptic",
+23 : "Atomic Ball - buckbuckchick", 
+24 : "DeMonotised - Everyone Else"
 };
 
 
@@ -1012,7 +1020,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!ball custom'){
 		rerndammerme = Math.random();
-		nermmerme = 20;
+		nermmerme = 24;
 		if (rerndammerme <= 1/nermmerme)
 			rerndammerme = 1;
                 else if (rerndammerme <= 2/nermmerme)
