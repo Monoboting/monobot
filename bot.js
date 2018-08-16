@@ -1061,6 +1061,14 @@ client.on('message', message => {
 			rerndammerme = 19;
 		else if (rerndammerme <= 20/nermmerme)
 			rerndammerme = 20;
+		else if (rerndammerme <= 21/nermmerme)
+			rerndammerme = 21;
+		else if (rerndammerme <= 22/nermmerme)
+			rerndammerme = 22;
+		else if (rerndammerme <= 23/nermmerme)
+			rerndammerme = 23;
+		else if (rerndammerme <= 24/nermmerme)
+			rerndammerme = 24;
 		message.channel.send({embed: {
 	title: "" + custermberllzNerm[rerndammerme] + "",
 	description: "" + custermberllz[rerndammerme] + "",
