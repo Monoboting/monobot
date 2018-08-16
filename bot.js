@@ -2155,7 +2155,7 @@ client.on('message', message => {
     }
 	if(message.content == 'm!solve tesalia 98' || message.content == 'm!solve t 98'){
         message.channel.send("Tesalia Level 98");
-        message.channel.send({files: ["./t98.jpg"]});
+        message.channel.send({files: ["./t98.gif"]});
     }
 	if(message.content == 'm!solve tesalia 99' || message.content == 'm!solve t 99'){
         message.channel.send("Tesalia Level 99\nUnknown Solution");
