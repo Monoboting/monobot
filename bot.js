@@ -1113,9 +1113,6 @@ client.on('message', message => {
 	if(message.content == 'm!lapras'){
 	    message.channel.send("<a:lapras:471783111299039259>");
     }
-	if(message.content == '2178'){
-	    message.channel.send("2179");
-    }
 	
 	if(message.content == 'm!rainbow'){
 	    message.channel.send({embed: {
