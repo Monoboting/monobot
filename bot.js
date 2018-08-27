@@ -1113,6 +1113,9 @@ client.on('message', message => {
 	if(message.content == 'm!lapras'){
 	    message.channel.send("<a:lapras:471783111299039259>");
     }
+	if(message.content == 'm!AdSF'){
+	    message.channel.send("<@321685193817849856>\n<:AdSF:483675528881242133>\n( ͡° ͜ʖ ͡°)");
+    }
 	
 	if(message.content == 'm!rainbow'){
 	    message.channel.send({embed: {
