@@ -1114,6 +1114,7 @@ client.on('message', message => {
 	    message.channel.send("<a:lapras:471783111299039259>");
     }
 	if(message.content == 'm!AdSF'){
+		message.delete();
 	    message.channel.send("<@321685193817849856>\n<:AdSF:483675528881242133>\n( ͡° ͜ʖ ͡°)");
     }
 	
