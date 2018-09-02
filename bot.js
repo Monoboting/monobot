@@ -1096,6 +1096,10 @@ client.on('message', message => {
 	    if(message.content == 'm!oof'){
 	    message.delete();
 		message.channel.send("<:oof:475373616876224535>");
+    }
+	if(message.content == '3999'){
+	    message.delete();
+		message.channel.send("4000");
     }/*
 	if(message.content == 'm!adsf'){
 	    message.delete();
