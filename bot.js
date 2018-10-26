@@ -2296,6 +2296,7 @@ client.on('message', message => {
        //message.channel.send("plz work");
     }*/
     //GAME
+	/*
     var i = 0;
     i = 0;
     do{
@@ -3068,6 +3069,7 @@ client.on('message', message => {
             }
         i++;
     } while (i < 2)
+	    */
 });
 
 
