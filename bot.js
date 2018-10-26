@@ -2315,12 +2315,6 @@ client.on('message', message => {
              
             if (merxPlayerzBool[i] == false && merxPlayerz[i] == testmsguser){
                 merxTerm[i] = 0;
-                /*
-                message.react("👍").then(() => {
-                        console.log("Reacted to message")
-                    }).catch(reason => {
-                        console.log(`Problem while reacting to message: ${reason}`);
-                });*/
 	
                 do {
                     ranNermg[i] = Math.random();
@@ -2372,10 +2366,8 @@ client.on('message', message => {
                     name: "Guessing Game | Level : " + streakNum[i],
                     icon_url: message.author.avatarURL
                   }
-                }}).then(function (message){
-                }).catch(function(){
                      
-                });
+                }});
                 //message.edit('This is my new content!')
                 //testmsgid = botsmg.id;
                 //botsmg;
