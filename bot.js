@@ -2321,6 +2321,7 @@ client.on('message', message => {
                     }).catch(reason => {
                         console.log(`Problem while reacting to message: ${reason}`);
                 });*/
+	/*
                 do {
                     ranNermg[i] = Math.random();
                     if (ranNermg[i] <= 0.05)
