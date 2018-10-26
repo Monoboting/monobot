@@ -213,7 +213,7 @@ client.on('message', message => {
         icon_url: client.user.avatarURL
         },
         title: "COMMANDS:",
-        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
+        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!game start\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -242,6 +242,10 @@ client.on('message', message => {
         {
             name: "•m!rule [number]",
 			value: "m!rule 1 provides the requested rule n°1"
+        },
+	{
+            name: "•m!game start",
+			value: "m!game start to begin the guessing game. | m!game stop to stop the game"
         },
 		{
             name: "•m!rps [r/p/s]",
@@ -493,10 +497,22 @@ client.on('message', message => {
         }
     });
     }
+	if(message.content == 'm!game'){
+		message.channel.send({embed: {
+        title: "Guessing Game",
+        description: "A guessing game where you have to guess the correct ball! \nYou start with 3 lives, losing one when you lose a stage. Choose a ball by typing the assign number :P If you don't feel like playing anymore, type m!game stop the bot will end the game. Due to lag, only 1 person can play at the time :)\nType m!game start to begin!",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 2.0\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 2.1\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -507,8 +523,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 2.0:",
-        description: "Updates for Commands:\nm!ball custom: Now with 20 balls!\nm!meme: Now with 50 memes!\nm!protip: now with 26 protips!\nKeep sending us your balls, memes, and protips!\nNEW COMMAND IN V 2.0\nm!solve t [number]\nTesalia Pack Solutions are finally out! Go get some help from Monobot\nUPCOMING COMMANDS:\n- Monobot Game\n- Speedrun Leaderboards\n- More ideas suggested by you guys!\nHAVE FUN AND ENJOY!",
+        title: "V 2.1:",
+        description: "NEW COMMAND\n- Monobot Game -> m!game\n- More ideas suggested by you guys!\nHAVE FUN AND ENJOY!",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -2283,7 +2299,7 @@ client.on('message', message => {
 	var i = 0;
     i = 0;
     do{
-        if(message.content == 'm?test' || merxPlayerzBool[i] == true){
+        if(message.content == 'm!game start' || merxPlayerzBool[i] == true){
             testmsguser = message.author;
             merxTerm[i]++;
             if (merxPlayerz[0] == " "){
@@ -2383,7 +2399,7 @@ client.on('message', message => {
                         merxPlayerzBool[i] = false;
                         merxPlayerz[i] = " ";
             }
-            if (merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "quit")){
+            if (merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "m!game stop")){
                         hs = "" + merxPlayerz[i] + " has " + streakNum[i] + " Streak";
                         message.channel.send({embed: {
                             title: "STREAK",
