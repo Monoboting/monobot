@@ -2390,6 +2390,7 @@ client.on('message', message => {
                         streakNum[i] = 0;
                         merxPlayerzBool[i] = false;
                         merxPlayerz[i] = " ";
+		    merxTerm[i] = 0;
             }
             if (merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "m!game stop")){
                         hs = "" + merxPlayerz[i] + " has " + streakNum[i] + " Streak";
@@ -2405,6 +2406,7 @@ client.on('message', message => {
                         streakNum[i] = 0;
                         merxPlayerzBool[i] = false;
                         merxPlayerz[i] = " ";
+		    merxTerm[i] = 0;
             }
             if (merxPlayerzBool[i] == true && merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "1" || message.content == "2") && (streakNum[i] < 40)){
                 merxTerm[i] = 0;
@@ -3057,10 +3059,13 @@ client.on('message', message => {
                   }
                         }});
                     }
+			
                 }
                  
             }
+		
 	}
+	    merxTerm[i] = 0;
         i++;
     } while (i < 2)
 	    
