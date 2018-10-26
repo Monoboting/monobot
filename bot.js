@@ -2296,7 +2296,7 @@ client.on('message', message => {
        //message.channel.send("plz work");
     }*/
     //GAME
-	/*
+	
     var i = 0;
     i = 0;
     do{
@@ -2321,7 +2321,7 @@ client.on('message', message => {
                     }).catch(reason => {
                         console.log(`Problem while reacting to message: ${reason}`);
                 });*/
-	/*
+	
                 do {
                     ranNermg[i] = Math.random();
                     if (ranNermg[i] <= 0.05)
@@ -2364,7 +2364,7 @@ client.on('message', message => {
                         ranNermg[i] = 18;
                 } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                 var botsmg = message.channel.send({embed: {
-                title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                title: "Which ball is the " + berllzNermg[ranNermg[i]] +"?",
                 description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
                 timestamp: new Date(),
                      
@@ -2458,13 +2458,13 @@ client.on('message', message => {
                         mernerNerm = 17;
                     else if (mernerNerm <= 0.95)
                         mernerNerm = 18;
-                } while (mernerNerm == ranNerm[i] || (mernerNerm != 0 && mernerNerm != 1 && mernerNerm != 2 && mernerNerm != 3 && mernerNerm != 4 && mernerNerm != 5 && mernerNerm != 6 && mernerNerm != 7 && mernerNerm != 8 && mernerNerm != 9 && mernerNerm != 10 && mernerNerm != 11 && mernerNerm != 12 && mernerNerm != 13 && mernerNerm != 14 && mernerNerm != 15 && mernerNerm != 16 && mernerNerm != 17 && mernerNerm != 18));
+                } while (mernerNerm == ranNermg[i] || (mernerNerm != 0 && mernerNerm != 1 && mernerNerm != 2 && mernerNerm != 3 && mernerNerm != 4 && mernerNerm != 5 && mernerNerm != 6 && mernerNerm != 7 && mernerNerm != 8 && mernerNerm != 9 && mernerNerm != 10 && mernerNerm != 11 && mernerNerm != 12 && mernerNerm != 13 && mernerNerm != 14 && mernerNerm != 15 && mernerNerm != 16 && mernerNerm != 17 && mernerNerm != 18));
                  
                  
                 if (message.content == "1" && randerm <= 0.5){
                     message.channel.send({embed: {
                         title: "WRONG!",
-                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817>",
+                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNermg[i]] + " => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
                     name: "Guessing Game | Level : " + streakNum[i],
@@ -2766,7 +2766,7 @@ client.on('message', message => {
                 if (message.content == "2" && randerm <= 0.5){
                     message.channel.send({embed: {
                         title: "CORRECT!",
-                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817>",
+                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNermg[i]] + " => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
                     name: "Guessing Game | Level : " + streakNum[i],
