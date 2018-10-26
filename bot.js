@@ -3060,6 +3060,7 @@ client.on('message', message => {
                 }
                  
             }
+	}
         i++;
     } while (i < 2)
 	    
