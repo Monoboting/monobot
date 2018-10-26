@@ -180,7 +180,7 @@ var merxPlayerzBool = {
     1 : false,
     2 : false
 };
-var ranNerm = {
+var ranNermg = {
     0 : 0,
     1 : 0,
     2 : 0
@@ -2296,7 +2296,7 @@ client.on('message', message => {
        //message.channel.send("plz work");
     }*/
     //GAME
-	var i = 0;
+    var i = 0;
     i = 0;
     do{
         if(message.content == 'm!game start' || merxPlayerzBool[i] == true){
@@ -2321,46 +2321,46 @@ client.on('message', message => {
                         console.log(`Problem while reacting to message: ${reason}`);
                 });*/
                 do {
-                    ranNerm[i] = Math.random();
-                    if (ranNerm[i] <= 0.05)
-                        ranNerm[i] = 0;
-                    else if (ranNerm[i] <= 0.10)
-                        ranNerm[i] = 1;
-                    else if (ranNerm[i] <= 0.15)
-                        ranNerm[i] = 2;
-                    else if (ranNerm[i] <= 0.20)
-                        ranNerm[i] = 3;
-                    else if (ranNerm[i] <= 0.25)
-                        ranNerm[i] = 4;
-                    else if (ranNerm[i] <= 0.30)
-                        ranNerm[i] = 5;
-                    else if (ranNerm[i] <= 0.35)
-                        ranNerm[i] = 6;
-                    else if (ranNerm[i] <= 0.40)
-                        ranNerm[i] = 7;
-                    else if (ranNerm[i] <= 0.45)
-                        ranNerm[i] = 8;
-                    else if (ranNerm[i] <= 0.50)
-                        ranNerm[i] = 9;
-                    else if (ranNerm[i] <= 0.55)
-                        ranNerm[i] = 10;
-                    else if (ranNerm[i] <= 0.60)
-                        ranNerm[i] = 11;
-                    else if (ranNerm[i] <= 0.65)
-                        ranNerm[i] = 12;
-                    else if (ranNerm[i] <= 0.70)
-                        ranNerm[i] = 13;
-                    else if (ranNerm[i] <= 0.75)
-                        ranNerm[i] = 14;
-                    else if (ranNerm[i] <= 0.80)
-                        ranNerm[i] = 15;
-                    else if (ranNerm[i] <= 0.85)
-                        ranNerm[i] = 16;
-                    else if (ranNerm[i] <= 0.90)
-                        ranNerm[i] = 17;
-                    else if (ranNerm[i] <= 0.95)
-                        ranNerm[i] = 18;
-                } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                    ranNermg[i] = Math.random();
+                    if (ranNermg[i] <= 0.05)
+                        ranNermg[i] = 0;
+                    else if (ranNermg[i] <= 0.10)
+                        ranNermg[i] = 1;
+                    else if (ranNermg[i] <= 0.15)
+                        ranNermg[i] = 2;
+                    else if (ranNermg[i] <= 0.20)
+                        ranNermg[i] = 3;
+                    else if (ranNermg[i] <= 0.25)
+                        ranNermg[i] = 4;
+                    else if (ranNermg[i] <= 0.30)
+                        ranNermg[i] = 5;
+                    else if (ranNermg[i] <= 0.35)
+                        ranNermg[i] = 6;
+                    else if (ranNermg[i] <= 0.40)
+                        ranNermg[i] = 7;
+                    else if (ranNermg[i] <= 0.45)
+                        ranNermg[i] = 8;
+                    else if (ranNermg[i] <= 0.50)
+                        ranNermg[i] = 9;
+                    else if (ranNermg[i] <= 0.55)
+                        ranNermg[i] = 10;
+                    else if (ranNermg[i] <= 0.60)
+                        ranNermg[i] = 11;
+                    else if (ranNermg[i] <= 0.65)
+                        ranNermg[i] = 12;
+                    else if (ranNermg[i] <= 0.70)
+                        ranNermg[i] = 13;
+                    else if (ranNermg[i] <= 0.75)
+                        ranNermg[i] = 14;
+                    else if (ranNermg[i] <= 0.80)
+                        ranNermg[i] = 15;
+                    else if (ranNermg[i] <= 0.85)
+                        ranNermg[i] = 16;
+                    else if (ranNermg[i] <= 0.90)
+                        ranNermg[i] = 17;
+                    else if (ranNermg[i] <= 0.95)
+                        ranNermg[i] = 18;
+                } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                 var botsmg = message.channel.send({embed: {
                 title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
                 description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
@@ -2371,8 +2371,6 @@ client.on('message', message => {
                     icon_url: message.author.avatarURL
                   }
                 }}).then(function (message){
-                    message.react(emojiCharacters[1])
-                    message.react(emojiCharacters[2])
                 }).catch(function(){
                      
                 });
@@ -2573,48 +2571,48 @@ client.on('message', message => {
                     }
                     if (merxPlayerzLerf[i] != 0) {
                         do {
-                        ranNerm[i] = Math.random();
-                        if (ranNerm[i] <= 0.05)
-                            ranNerm[i] = 0;
-                        else if (ranNerm[i] <= 0.10)
-                            ranNerm[i] = 1;
-                        else if (ranNerm[i] <= 0.15)
-                            ranNerm[i] = 2;
-                        else if (ranNerm[i] <= 0.20)
-                            ranNerm[i] = 3;
-                        else if (ranNerm[i] <= 0.25)
-                            ranNerm[i] = 4;
-                        else if (ranNerm[i] <= 0.30)
-                            ranNerm[i] = 5;
-                        else if (ranNerm[i] <= 0.35)
-                            ranNerm[i] = 6;
-                        else if (ranNerm[i] <= 0.40)
-                            ranNerm[i] = 7;
-                        else if (ranNerm[i] <= 0.45)
-                            ranNerm[i] = 8;
-                        else if (ranNerm[i] <= 0.50)
-                            ranNerm[i] = 9;
-                        else if (ranNerm[i] <= 0.55)
-                            ranNerm[i] = 10;
-                        else if (ranNerm[i] <= 0.60)
-                            ranNerm[i] = 11;
-                        else if (ranNerm[i] <= 0.65)
-                            ranNerm[i] = 12;
-                        else if (ranNerm[i] <= 0.70)
-                            ranNerm[i] = 13;
-                        else if (ranNerm[i] <= 0.75)
-                            ranNerm[i] = 14;
-                        else if (ranNerm[i] <= 0.80)
-                            ranNerm[i] = 15;
-                        else if (ranNerm[i] <= 0.85)
-                            ranNerm[i] = 16;
-                        else if (ranNerm[i] <= 0.90)
-                            ranNerm[i] = 17;
-                        else if (ranNerm[i] <= 0.95)
-                            ranNerm[i] = 18;
-                        } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                        ranNermg[i] = Math.random();
+                        if (ranNermg[i] <= 0.05)
+                            ranNermg[i] = 0;
+                        else if (ranNermg[i] <= 0.10)
+                            ranNermg[i] = 1;
+                        else if (ranNermg[i] <= 0.15)
+                            ranNermg[i] = 2;
+                        else if (ranNermg[i] <= 0.20)
+                            ranNermg[i] = 3;
+                        else if (ranNermg[i] <= 0.25)
+                            ranNermg[i] = 4;
+                        else if (ranNermg[i] <= 0.30)
+                            ranNermg[i] = 5;
+                        else if (ranNermg[i] <= 0.35)
+                            ranNermg[i] = 6;
+                        else if (ranNermg[i] <= 0.40)
+                            ranNermg[i] = 7;
+                        else if (ranNermg[i] <= 0.45)
+                            ranNermg[i] = 8;
+                        else if (ranNermg[i] <= 0.50)
+                            ranNermg[i] = 9;
+                        else if (ranNermg[i] <= 0.55)
+                            ranNermg[i] = 10;
+                        else if (ranNermg[i] <= 0.60)
+                            ranNermg[i] = 11;
+                        else if (ranNermg[i] <= 0.65)
+                            ranNermg[i] = 12;
+                        else if (ranNermg[i] <= 0.70)
+                            ranNermg[i] = 13;
+                        else if (ranNermg[i] <= 0.75)
+                            ranNermg[i] = 14;
+                        else if (ranNermg[i] <= 0.80)
+                            ranNermg[i] = 15;
+                        else if (ranNermg[i] <= 0.85)
+                            ranNermg[i] = 16;
+                        else if (ranNermg[i] <= 0.90)
+                            ranNermg[i] = 17;
+                        else if (ranNermg[i] <= 0.95)
+                            ranNermg[i] = 18;
+                        } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                         var botsmg = message.channel.send({embed: {
-                        title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                        title: "Which ball is the " + berllzNermg[ranNermg[i]] +"?",
                         description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
@@ -2627,7 +2625,7 @@ client.on('message', message => {
                 else if (message.content == "1" && randerm <= 1){
                     message.channel.send({embed: {
                         title: "CORRECT!",
-                        description: "" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
+                        description: "" + berllzg[ranNermg[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
                     name: "Guessing Game | Level : " + streakNum[i],
@@ -2713,48 +2711,48 @@ client.on('message', message => {
                         }});
                     }
                     do {
-                        ranNerm[i] = Math.random();
-                        if (ranNerm[i] <= 0.05)
-                            ranNerm[i] = 0;
-                        else if (ranNerm[i] <= 0.10)
-                            ranNerm[i] = 1;
-                        else if (ranNerm[i] <= 0.15)
-                            ranNerm[i] = 2;
-                        else if (ranNerm[i] <= 0.20)
-                            ranNerm[i] = 3;
-                        else if (ranNerm[i] <= 0.25)
-                            ranNerm[i] = 4;
-                        else if (ranNerm[i] <= 0.30)
-                            ranNerm[i] = 5;
-                        else if (ranNerm[i] <= 0.35)
-                            ranNerm[i] = 6;
-                        else if (ranNerm[i] <= 0.40)
-                            ranNerm[i] = 7;
-                        else if (ranNerm[i] <= 0.45)
-                            ranNerm[i] = 8;
-                        else if (ranNerm[i] <= 0.50)
-                            ranNerm[i] = 9;
-                        else if (ranNerm[i] <= 0.55)
-                            ranNerm[i] = 10;
-                        else if (ranNerm[i] <= 0.60)
-                            ranNerm[i] = 11;
-                        else if (ranNerm[i] <= 0.65)
-                            ranNerm[i] = 12;
-                        else if (ranNerm[i] <= 0.70)
-                            ranNerm[i] = 13;
-                        else if (ranNerm[i] <= 0.75)
-                            ranNerm[i] = 14;
-                        else if (ranNerm[i] <= 0.80)
-                            ranNerm[i] = 15;
-                        else if (ranNerm[i] <= 0.85)
-                            ranNerm[i] = 16;
-                        else if (ranNerm[i] <= 0.90)
-                            ranNerm[i] = 17;
-                        else if (ranNerm[i] <= 0.95)
-                            ranNerm[i] = 18;
-                    } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                        ranNermg[i] = Math.random();
+                        if (ranNermg[i] <= 0.05)
+                            ranNermg[i] = 0;
+                        else if (ranNermg[i] <= 0.10)
+                            ranNermg[i] = 1;
+                        else if (ranNermg[i] <= 0.15)
+                            ranNermg[i] = 2;
+                        else if (ranNermg[i] <= 0.20)
+                            ranNermg[i] = 3;
+                        else if (ranNermg[i] <= 0.25)
+                            ranNermg[i] = 4;
+                        else if (ranNermg[i] <= 0.30)
+                            ranNermg[i] = 5;
+                        else if (ranNermg[i] <= 0.35)
+                            ranNermg[i] = 6;
+                        else if (ranNermg[i] <= 0.40)
+                            ranNermg[i] = 7;
+                        else if (ranNermg[i] <= 0.45)
+                            ranNermg[i] = 8;
+                        else if (ranNermg[i] <= 0.50)
+                            ranNermg[i] = 9;
+                        else if (ranNermg[i] <= 0.55)
+                            ranNermg[i] = 10;
+                        else if (ranNermg[i] <= 0.60)
+                            ranNermg[i] = 11;
+                        else if (ranNermg[i] <= 0.65)
+                            ranNermg[i] = 12;
+                        else if (ranNermg[i] <= 0.70)
+                            ranNermg[i] = 13;
+                        else if (ranNermg[i] <= 0.75)
+                            ranNermg[i] = 14;
+                        else if (ranNermg[i] <= 0.80)
+                            ranNermg[i] = 15;
+                        else if (ranNermg[i] <= 0.85)
+                            ranNermg[i] = 16;
+                        else if (ranNermg[i] <= 0.90)
+                            ranNermg[i] = 17;
+                        else if (ranNermg[i] <= 0.95)
+                            ranNermg[i] = 18;
+                    } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                     var botsmg = message.channel.send({embed: {
-                    title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                    title: "Which ball is the " + berllzNermg[ranNermg[i]] +"?",
                     description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
                     timestamp: new Date(),
                     author: {
@@ -2852,48 +2850,48 @@ client.on('message', message => {
                         }});
                     }
                     do {
-                    ranNerm[i] = Math.random();
-                    if (ranNerm[i] <= 0.05)
-                        ranNerm[i] = 0;
-                    else if (ranNerm[i] <= 0.10)
-                        ranNerm[i] = 1;
-                    else if (ranNerm[i] <= 0.15)
-                        ranNerm[i] = 2;
-                    else if (ranNerm[i] <= 0.20)
-                        ranNerm[i] = 3;
-                    else if (ranNerm[i] <= 0.25)
-                        ranNerm[i] = 4;
-                    else if (ranNerm[i] <= 0.30)
-                        ranNerm[i] = 5;
-                    else if (ranNerm[i] <= 0.35)
-                        ranNerm[i] = 6;
-                    else if (ranNerm[i] <= 0.40)
-                        ranNerm[i] = 7;
-                    else if (ranNerm[i] <= 0.45)
-                        ranNerm[i] = 8;
-                    else if (ranNerm[i] <= 0.50)
-                        ranNerm[i] = 9;
-                    else if (ranNerm[i] <= 0.55)
-                        ranNerm[i] = 10;
-                    else if (ranNerm[i] <= 0.60)
-                        ranNerm[i] = 11;
-                    else if (ranNerm[i] <= 0.65)
-                        ranNerm[i] = 12;
-                    else if (ranNerm[i] <= 0.70)
-                        ranNerm[i] = 13;
-                    else if (ranNerm[i] <= 0.75)
-                        ranNerm[i] = 14;
-                    else if (ranNerm[i] <= 0.80)
-                        ranNerm[i] = 15;
-                    else if (ranNerm[i] <= 0.85)
-                        ranNerm[i] = 16;
-                    else if (ranNerm[i] <= 0.90)
-                        ranNerm[i] = 17;
-                    else if (ranNerm[i] <= 0.95)
-                        ranNerm[i] = 18;
-                    } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                    ranNermg[i] = Math.random();
+                        if (ranNermg[i] <= 0.05)
+                            ranNermg[i] = 0;
+                        else if (ranNermg[i] <= 0.10)
+                            ranNermg[i] = 1;
+                        else if (ranNermg[i] <= 0.15)
+                            ranNermg[i] = 2;
+                        else if (ranNermg[i] <= 0.20)
+                            ranNermg[i] = 3;
+                        else if (ranNermg[i] <= 0.25)
+                            ranNermg[i] = 4;
+                        else if (ranNermg[i] <= 0.30)
+                            ranNermg[i] = 5;
+                        else if (ranNermg[i] <= 0.35)
+                            ranNermg[i] = 6;
+                        else if (ranNermg[i] <= 0.40)
+                            ranNermg[i] = 7;
+                        else if (ranNermg[i] <= 0.45)
+                            ranNermg[i] = 8;
+                        else if (ranNermg[i] <= 0.50)
+                            ranNermg[i] = 9;
+                        else if (ranNermg[i] <= 0.55)
+                            ranNermg[i] = 10;
+                        else if (ranNermg[i] <= 0.60)
+                            ranNermg[i] = 11;
+                        else if (ranNermg[i] <= 0.65)
+                            ranNermg[i] = 12;
+                        else if (ranNermg[i] <= 0.70)
+                            ranNermg[i] = 13;
+                        else if (ranNermg[i] <= 0.75)
+                            ranNermg[i] = 14;
+                        else if (ranNermg[i] <= 0.80)
+                            ranNermg[i] = 15;
+                        else if (ranNermg[i] <= 0.85)
+                            ranNermg[i] = 16;
+                        else if (ranNermg[i] <= 0.90)
+                            ranNermg[i] = 17;
+                        else if (ranNermg[i] <= 0.95)
+                            ranNermg[i] = 18;
+                    } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                     var botsmg = message.channel.send({embed: {
-                    title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                    title: "Which ball is the " + berllzNermg[ranNermg[i]] +"?",
                     description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
                     timestamp: new Date(),
                     author: {
@@ -2906,7 +2904,7 @@ client.on('message', message => {
                 else if (message.content == "2" && randerm <= 1){
                     message.channel.send({embed: {
                         title: "WRONG!",
-                        description: "" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
+                        description: "" + berllzg[ranNermg[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
                     name: "Guessing Game | Level : " + streakNum[i],
@@ -3015,48 +3013,48 @@ client.on('message', message => {
                     }
                     if (merxPlayerzLerf[i] != 0) {
                         do {
-                        ranNerm[i] = Math.random();
-                        if (ranNerm[i] <= 0.05)
-                            ranNerm[i] = 0;
-                        else if (ranNerm[i] <= 0.10)
-                            ranNerm[i] = 1;
-                        else if (ranNerm[i] <= 0.15)
-                            ranNerm[i] = 2;
-                        else if (ranNerm[i] <= 0.20)
-                            ranNerm[i] = 3;
-                        else if (ranNerm[i] <= 0.25)
-                            ranNerm[i] = 4;
-                        else if (ranNerm[i] <= 0.30)
-                            ranNerm[i] = 5;
-                        else if (ranNerm[i] <= 0.35)
-                            ranNerm[i] = 6;
-                        else if (ranNerm[i] <= 0.40)
-                            ranNerm[i] = 7;
-                        else if (ranNerm[i] <= 0.45)
-                            ranNerm[i] = 8;
-                        else if (ranNerm[i] <= 0.50)
-                            ranNerm[i] = 9;
-                        else if (ranNerm[i] <= 0.55)
-                            ranNerm[i] = 10;
-                        else if (ranNerm[i] <= 0.60)
-                            ranNerm[i] = 11;
-                        else if (ranNerm[i] <= 0.65)
-                            ranNerm[i] = 12;
-                        else if (ranNerm[i] <= 0.70)
-                            ranNerm[i] = 13;
-                        else if (ranNerm[i] <= 0.75)
-                            ranNerm[i] = 14;
-                        else if (ranNerm[i] <= 0.80)
-                            ranNerm[i] = 15;
-                        else if (ranNerm[i] <= 0.85)
-                            ranNerm[i] = 16;
-                        else if (ranNerm[i] <= 0.90)
-                            ranNerm[i] = 17;
-                        else if (ranNerm[i] <= 0.95)
-                            ranNerm[i] = 18;
-                        } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                        ranNermg[i] = Math.random();
+                        if (ranNermg[i] <= 0.05)
+                            ranNermg[i] = 0;
+                        else if (ranNermg[i] <= 0.10)
+                            ranNermg[i] = 1;
+                        else if (ranNermg[i] <= 0.15)
+                            ranNermg[i] = 2;
+                        else if (ranNermg[i] <= 0.20)
+                            ranNermg[i] = 3;
+                        else if (ranNermg[i] <= 0.25)
+                            ranNermg[i] = 4;
+                        else if (ranNermg[i] <= 0.30)
+                            ranNermg[i] = 5;
+                        else if (ranNermg[i] <= 0.35)
+                            ranNermg[i] = 6;
+                        else if (ranNermg[i] <= 0.40)
+                            ranNermg[i] = 7;
+                        else if (ranNermg[i] <= 0.45)
+                            ranNermg[i] = 8;
+                        else if (ranNermg[i] <= 0.50)
+                            ranNermg[i] = 9;
+                        else if (ranNermg[i] <= 0.55)
+                            ranNermg[i] = 10;
+                        else if (ranNermg[i] <= 0.60)
+                            ranNermg[i] = 11;
+                        else if (ranNermg[i] <= 0.65)
+                            ranNermg[i] = 12;
+                        else if (ranNermg[i] <= 0.70)
+                            ranNermg[i] = 13;
+                        else if (ranNermg[i] <= 0.75)
+                            ranNermg[i] = 14;
+                        else if (ranNermg[i] <= 0.80)
+                            ranNermg[i] = 15;
+                        else if (ranNermg[i] <= 0.85)
+                            ranNermg[i] = 16;
+                        else if (ranNermg[i] <= 0.90)
+                            ranNermg[i] = 17;
+                        else if (ranNermg[i] <= 0.95)
+                            ranNermg[i] = 18;
+                    } while (ranNermg[i] != 0 && ranNermg[i] != 1 && ranNermg[i] != 2 && ranNermg[i] != 3 && ranNermg[i] != 4 && ranNermg[i] != 5 && ranNermg[i] != 6 && ranNermg[i] != 7 && ranNermg[i] != 8 && ranNermg[i] != 9 && ranNermg[i] != 10 && ranNermg[i] != 11 && ranNermg[i] != 12 && ranNermg[i] != 13 && ranNermg[i] != 14 && ranNermg[i] != 15 && ranNermg[i] != 16 && ranNermg[i] != 17 && ranNermg[i] != 18);
                         var botsmg = message.channel.send({embed: {
-                        title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                        title: "Which ball is the " + berllzNermg[ranNermg[i]] +"?",
                         description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
                         timestamp: new Date(),
                         author: {
