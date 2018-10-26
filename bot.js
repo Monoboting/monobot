@@ -112,7 +112,91 @@ const custermberllzNerm = {
 23 : "Atomic Ball - buckbuckchick", 
 24 : "DeMonotised - Everyone Else"
 };
-
+//Game
+const berllzg = {
+    0 : "<:YellowBall:463752476730851328>",
+    1 : "<:WhiteBall:463752474512326657>",
+    2 : "<:SkyBlueBall:463752476362014731>",
+    3 : "<:RednBlueBall:463752479247564800>",
+    4 : "<:RedBall:463752476177334273>",
+    5 : "<:PurpleBall:463752475934195743>",
+    6 : "<:PolarBall:463752478496784384>",
+    7 : "<:OrangeBall:463752475791327233>",
+    8 : "<:LimeBall:463380371262930945>",
+    9 : "<:LightPinkBall:463752475657371701>",
+    10 : "<:LightGrayBall:463752477410590722>",
+    11 : "<:InvertedBall:463752473308561418>",
+    12 : "<:InfraYellowBall:463752479046369310>",
+    13 : "<:InfraredBall:463752478031347714>",
+    14 : "<:GreenBall:463752472909840404>",
+    15 : "<:GrassyBall:463752476919726093>",
+    16 : "<:DarkPinkBall:463752471035117578>",
+    17 : "<:DarkGrayBall:463752470712287253>",
+    18 : "<:DarkBlueBall:463752470925934592>",
+    19 : "<:CoolBall:463752467616628737>",
+    20 : "<:BrownBall:463752466945671224>"
+};
+const berllzNermg = {
+    0 : "Yellow Ball",
+    1 : "White Ball",
+    2 : "Sky Blue Ball",
+    3 : "Red n Blue Ball",
+    4 : "Red Ball",
+    5 : "Purple Ball",
+    6 : "Polar Ball",
+    7 : "Orange Ball",
+    8 : "Lime Ball",
+    9 : "Light Pink Ball",
+    10 : "Light Gray Ball",
+    11 : "Inverted Ball",
+    12 : "Infra Yellow Ball",
+    13 : "Infrared Ball",
+    14 : "Green Ball",
+    15 : "Grassy Ball",
+    16 : "Dark Pink Ball",
+    17 : "Dark Gray Ball",
+    18 : "Dark Blue Ball",
+    19 : "Cool Ball",
+    20 : "Brown Ball"
+};
+var hs = "";
+var merxPlayerz = {
+    0 : " ",
+    1 : " ",
+    2 : " "
+};
+var merxPlayerzLerf = {
+    0 : 3,
+    1 : 3,
+    2 : 3
+};
+var merxTerm = {
+    0 : 0,
+    1 : 0,
+    2 : 0
+};
+var merxPlayerzBool = {
+    0 : false,
+    1 : false,
+    2 : false
+};
+var ranNerm = {
+    0 : 0,
+    1 : 0,
+    2 : 0
+};
+var streakNum = {
+    0 : 0,
+    1 : 0,
+    2 : 0
+};
+var testmsguser = "";
+var testmsgid = "";
+var tersterng = false;
+var boolquerz = false;
+var auth = "";
+var querzNerm = 0;
+//
 
 client.on('ready', ()  =>{
     //console.log('I am ready!');
@@ -2195,7 +2279,781 @@ client.on('message', message => {
        message.channel.send("Arcade Level" + solArr[1] + ".");
        //message.channel.send("plz work");
     }*/
-    
+    //GAME
+	var i = 0;
+    i = 0;
+    do{
+        if(message.content == 'm?test' || merxPlayerzBool[i] == true){
+            testmsguser = message.author;
+            merxTerm[i]++;
+            if (merxPlayerz[0] == " "){
+                merxPlayerz[i] = testmsguser;
+            }
+            else if (merxPlayerz[1] == " " && merxPlayerz[0] != testmsguser){
+                merxPlayerz[1] = testmsguser;
+            }
+            else if (merxPlayerz[2] == " " && merxPlayerz[0] != testmsguser && merxPlayerz[1] != testmsguser){
+                merxPlayerz[2] = testmsguser;
+            }
+             
+            if (merxPlayerzBool[i] == false && merxPlayerz[i] == testmsguser){
+                merxTerm[i] = 0;
+                /*
+                message.react("👍").then(() => {
+                        console.log("Reacted to message")
+                    }).catch(reason => {
+                        console.log(`Problem while reacting to message: ${reason}`);
+                });*/
+                do {
+                    ranNerm[i] = Math.random();
+                    if (ranNerm[i] <= 0.05)
+                        ranNerm[i] = 0;
+                    else if (ranNerm[i] <= 0.10)
+                        ranNerm[i] = 1;
+                    else if (ranNerm[i] <= 0.15)
+                        ranNerm[i] = 2;
+                    else if (ranNerm[i] <= 0.20)
+                        ranNerm[i] = 3;
+                    else if (ranNerm[i] <= 0.25)
+                        ranNerm[i] = 4;
+                    else if (ranNerm[i] <= 0.30)
+                        ranNerm[i] = 5;
+                    else if (ranNerm[i] <= 0.35)
+                        ranNerm[i] = 6;
+                    else if (ranNerm[i] <= 0.40)
+                        ranNerm[i] = 7;
+                    else if (ranNerm[i] <= 0.45)
+                        ranNerm[i] = 8;
+                    else if (ranNerm[i] <= 0.50)
+                        ranNerm[i] = 9;
+                    else if (ranNerm[i] <= 0.55)
+                        ranNerm[i] = 10;
+                    else if (ranNerm[i] <= 0.60)
+                        ranNerm[i] = 11;
+                    else if (ranNerm[i] <= 0.65)
+                        ranNerm[i] = 12;
+                    else if (ranNerm[i] <= 0.70)
+                        ranNerm[i] = 13;
+                    else if (ranNerm[i] <= 0.75)
+                        ranNerm[i] = 14;
+                    else if (ranNerm[i] <= 0.80)
+                        ranNerm[i] = 15;
+                    else if (ranNerm[i] <= 0.85)
+                        ranNerm[i] = 16;
+                    else if (ranNerm[i] <= 0.90)
+                        ranNerm[i] = 17;
+                    else if (ranNerm[i] <= 0.95)
+                        ranNerm[i] = 18;
+                } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                var botsmg = message.channel.send({embed: {
+                title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
+                timestamp: new Date(),
+                     
+                author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                }}).then(function (message){
+                    message.react(emojiCharacters[1])
+                    message.react(emojiCharacters[2])
+                }).catch(function(){
+                     
+                });
+                //message.edit('This is my new content!')
+                //testmsgid = botsmg.id;
+                //botsmg;
+                //tersterng = true;
+                merxPlayerzBool[i] = true;
+                merxPlayerzLerf[i] = 3;
+                //message.channel.send("id -> " + testmsgid + "\nuser: -> " + testmsguser);
+            }
+            if (merxTerm[i] >= 15){
+                        hs = "" + merxPlayerz[i] + " has " + streakNum[i] + " Streak";
+                        message.channel.send({embed: {
+                            title: "STREAK",
+                            description: "" + merxPlayerz[i] + " has not responded\nYour score is: " + streakNum[i] + " Streak",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i] = 0;
+                        merxPlayerzBool[i] = false;
+                        merxPlayerz[i] = " ";
+            }
+            if (merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "quit")){
+                        hs = "" + merxPlayerz[i] + " has " + streakNum[i] + " Streak";
+                        message.channel.send({embed: {
+                            title: "STREAK",
+                            description: "" + merxPlayerz[i] + " has Quited\nYour score is: " + streakNum[i] + " Streak",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i] = 0;
+                        merxPlayerzBool[i] = false;
+                        merxPlayerz[i] = " ";
+            }
+            if (merxPlayerzBool[i] == true && merxPlayerz[i] == testmsguser && message.author == merxPlayerz[i] && (message.content == "1" || message.content == "2") && (streakNum[i] < 40)){
+                merxTerm[i] = 0;
+                var randerm = Math.random();
+                var mernerNerm = Math.random();
+                do{
+                    mernerNerm = Math.random();
+                    if (mernerNerm <= 0.05)
+                        mernerNerm = 0;
+                    else if (mernerNerm <= 0.10)
+                        mernerNerm = 1;
+                    else if (mernerNerm <= 0.15)
+                        mernerNerm = 2;
+                    else if (mernerNerm <= 0.20)
+                        mernerNerm = 3;
+                    else if (mernerNerm <= 0.25)
+                        mernerNerm = 4;
+                    else if (mernerNerm <= 0.30)
+                        mernerNerm = 5;
+                    else if (mernerNerm <= 0.35)
+                        mernerNerm = 6;
+                    else if (mernerNerm <= 0.40)
+                        mernerNerm = 7;
+                    else if (mernerNerm <= 0.45)
+                        mernerNerm = 8;
+                    else if (mernerNerm <= 0.50)
+                        mernerNerm = 9;
+                    else if (mernerNerm <= 0.55)
+                        mernerNerm = 10;
+                    else if (mernerNerm <= 0.60)
+                        mernerNerm = 11;
+                    else if (mernerNerm <= 0.65)
+                        mernerNerm = 12;
+                    else if (mernerNerm <= 0.70)
+                        mernerNerm = 13;
+                    else if (mernerNerm <= 0.75)
+                        mernerNerm = 14;
+                    else if (mernerNerm <= 0.80)
+                        mernerNerm = 15;
+                    else if (mernerNerm <= 0.85)
+                        mernerNerm = 16;
+                    else if (mernerNerm <= 0.90)
+                        mernerNerm = 17;
+                    else if (mernerNerm <= 0.95)
+                        mernerNerm = 18;
+                } while (mernerNerm == ranNerm[i] || (mernerNerm != 0 && mernerNerm != 1 && mernerNerm != 2 && mernerNerm != 3 && mernerNerm != 4 && mernerNerm != 5 && mernerNerm != 6 && mernerNerm != 7 && mernerNerm != 8 && mernerNerm != 9 && mernerNerm != 10 && mernerNerm != 11 && mernerNerm != 12 && mernerNerm != 13 && mernerNerm != 14 && mernerNerm != 15 && mernerNerm != 16 && mernerNerm != 17 && mernerNerm != 18));
+                 
+                 
+                if (message.content == "1" && randerm <= 0.5){
+                    message.channel.send({embed: {
+                        title: "WRONG!",
+                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                    merxPlayerzLerf[i] = merxPlayerzLerf[i] - 1;
+                    if (merxPlayerzLerf[i] == 7){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart: :black_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 6){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 5){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 4){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 3){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 2){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 1){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 0){
+                        hs = "" + testmsguser + " has " + streakNum[i] + " Streak";
+                        message.channel.send({embed: {
+                            title: "STREAK",
+                            description: "" + testmsguser + " has " + streakNum[i] + " Streak",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i] = 0;
+                        merxPlayerzBool[i] = false;
+                        merxPlayerz[i] = " ";
+                    }
+                    if (merxPlayerzLerf[i] != 0) {
+                        do {
+                        ranNerm[i] = Math.random();
+                        if (ranNerm[i] <= 0.05)
+                            ranNerm[i] = 0;
+                        else if (ranNerm[i] <= 0.10)
+                            ranNerm[i] = 1;
+                        else if (ranNerm[i] <= 0.15)
+                            ranNerm[i] = 2;
+                        else if (ranNerm[i] <= 0.20)
+                            ranNerm[i] = 3;
+                        else if (ranNerm[i] <= 0.25)
+                            ranNerm[i] = 4;
+                        else if (ranNerm[i] <= 0.30)
+                            ranNerm[i] = 5;
+                        else if (ranNerm[i] <= 0.35)
+                            ranNerm[i] = 6;
+                        else if (ranNerm[i] <= 0.40)
+                            ranNerm[i] = 7;
+                        else if (ranNerm[i] <= 0.45)
+                            ranNerm[i] = 8;
+                        else if (ranNerm[i] <= 0.50)
+                            ranNerm[i] = 9;
+                        else if (ranNerm[i] <= 0.55)
+                            ranNerm[i] = 10;
+                        else if (ranNerm[i] <= 0.60)
+                            ranNerm[i] = 11;
+                        else if (ranNerm[i] <= 0.65)
+                            ranNerm[i] = 12;
+                        else if (ranNerm[i] <= 0.70)
+                            ranNerm[i] = 13;
+                        else if (ranNerm[i] <= 0.75)
+                            ranNerm[i] = 14;
+                        else if (ranNerm[i] <= 0.80)
+                            ranNerm[i] = 15;
+                        else if (ranNerm[i] <= 0.85)
+                            ranNerm[i] = 16;
+                        else if (ranNerm[i] <= 0.90)
+                            ranNerm[i] = 17;
+                        else if (ranNerm[i] <= 0.95)
+                            ranNerm[i] = 18;
+                        } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                        var botsmg = message.channel.send({embed: {
+                        title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                        description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                }
+                else if (message.content == "1" && randerm <= 1){
+                    message.channel.send({embed: {
+                        title: "CORRECT!",
+                        description: "" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                    streakNum[i]++;
+                    if (merxPlayerzLerf[i] == 7){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart: :black_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 6){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 5){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 4){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 3){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 2){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 1){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    do {
+                        ranNerm[i] = Math.random();
+                        if (ranNerm[i] <= 0.05)
+                            ranNerm[i] = 0;
+                        else if (ranNerm[i] <= 0.10)
+                            ranNerm[i] = 1;
+                        else if (ranNerm[i] <= 0.15)
+                            ranNerm[i] = 2;
+                        else if (ranNerm[i] <= 0.20)
+                            ranNerm[i] = 3;
+                        else if (ranNerm[i] <= 0.25)
+                            ranNerm[i] = 4;
+                        else if (ranNerm[i] <= 0.30)
+                            ranNerm[i] = 5;
+                        else if (ranNerm[i] <= 0.35)
+                            ranNerm[i] = 6;
+                        else if (ranNerm[i] <= 0.40)
+                            ranNerm[i] = 7;
+                        else if (ranNerm[i] <= 0.45)
+                            ranNerm[i] = 8;
+                        else if (ranNerm[i] <= 0.50)
+                            ranNerm[i] = 9;
+                        else if (ranNerm[i] <= 0.55)
+                            ranNerm[i] = 10;
+                        else if (ranNerm[i] <= 0.60)
+                            ranNerm[i] = 11;
+                        else if (ranNerm[i] <= 0.65)
+                            ranNerm[i] = 12;
+                        else if (ranNerm[i] <= 0.70)
+                            ranNerm[i] = 13;
+                        else if (ranNerm[i] <= 0.75)
+                            ranNerm[i] = 14;
+                        else if (ranNerm[i] <= 0.80)
+                            ranNerm[i] = 15;
+                        else if (ranNerm[i] <= 0.85)
+                            ranNerm[i] = 16;
+                        else if (ranNerm[i] <= 0.90)
+                            ranNerm[i] = 17;
+                        else if (ranNerm[i] <= 0.95)
+                            ranNerm[i] = 18;
+                    } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                    var botsmg = message.channel.send({embed: {
+                    title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                    description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
+                    timestamp: new Date(),
+                    author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                }
+                if (message.content == "2" && randerm <= 0.5){
+                    message.channel.send({embed: {
+                        title: "CORRECT!",
+                        description: "" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817> \n" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                    streakNum[i]++;
+                    if (merxPlayerzLerf[i] == 7){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart: :black_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 6){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 5){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 4){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 3){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 2){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    if (merxPlayerzLerf[i] == 1){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                    do {
+                    ranNerm[i] = Math.random();
+                    if (ranNerm[i] <= 0.05)
+                        ranNerm[i] = 0;
+                    else if (ranNerm[i] <= 0.10)
+                        ranNerm[i] = 1;
+                    else if (ranNerm[i] <= 0.15)
+                        ranNerm[i] = 2;
+                    else if (ranNerm[i] <= 0.20)
+                        ranNerm[i] = 3;
+                    else if (ranNerm[i] <= 0.25)
+                        ranNerm[i] = 4;
+                    else if (ranNerm[i] <= 0.30)
+                        ranNerm[i] = 5;
+                    else if (ranNerm[i] <= 0.35)
+                        ranNerm[i] = 6;
+                    else if (ranNerm[i] <= 0.40)
+                        ranNerm[i] = 7;
+                    else if (ranNerm[i] <= 0.45)
+                        ranNerm[i] = 8;
+                    else if (ranNerm[i] <= 0.50)
+                        ranNerm[i] = 9;
+                    else if (ranNerm[i] <= 0.55)
+                        ranNerm[i] = 10;
+                    else if (ranNerm[i] <= 0.60)
+                        ranNerm[i] = 11;
+                    else if (ranNerm[i] <= 0.65)
+                        ranNerm[i] = 12;
+                    else if (ranNerm[i] <= 0.70)
+                        ranNerm[i] = 13;
+                    else if (ranNerm[i] <= 0.75)
+                        ranNerm[i] = 14;
+                    else if (ranNerm[i] <= 0.80)
+                        ranNerm[i] = 15;
+                    else if (ranNerm[i] <= 0.85)
+                        ranNerm[i] = 16;
+                    else if (ranNerm[i] <= 0.90)
+                        ranNerm[i] = 17;
+                    else if (ranNerm[i] <= 0.95)
+                        ranNerm[i] = 18;
+                    } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                    var botsmg = message.channel.send({embed: {
+                    title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                    description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
+                    timestamp: new Date(),
+                    author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                }
+                 
+                else if (message.content == "2" && randerm <= 1){
+                    message.channel.send({embed: {
+                        title: "WRONG!",
+                        description: "" + berllzg[ranNerm[i]] + " => <:UnlockBall:463357163197431817> \n" + berllzg[mernerNerm] + " => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                    }});
+                    merxPlayerzLerf[i] = merxPlayerzLerf[i] - 1;
+                    if (merxPlayerzLerf[i] == 7){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart: :black_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 6){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart: :purple_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 5){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart: :blue_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 4){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart: :yellow_heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 3){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 2){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart: :heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 1){
+                        message.channel.send({embed: {
+                            title: "NEXT ROUND!",
+                            description: ":heart:",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i]++;
+                    }
+                    if (merxPlayerzLerf[i] == 0){
+                        hs = "" + testmsguser + " has " + streakNum[i] + " Streak";
+                        message.channel.send({embed: {
+                            title: "STREAK",
+                            description: "" + testmsguser + " has " + streakNum[i] + " Streak",
+                            timestamp: new Date(),
+                            author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                        streakNum[i] = 0;
+                        merxPlayerzBool[i] = false;
+                        merxPlayerz[i] = " ";
+                    }
+                    if (merxPlayerzLerf[i] != 0) {
+                        do {
+                        ranNerm[i] = Math.random();
+                        if (ranNerm[i] <= 0.05)
+                            ranNerm[i] = 0;
+                        else if (ranNerm[i] <= 0.10)
+                            ranNerm[i] = 1;
+                        else if (ranNerm[i] <= 0.15)
+                            ranNerm[i] = 2;
+                        else if (ranNerm[i] <= 0.20)
+                            ranNerm[i] = 3;
+                        else if (ranNerm[i] <= 0.25)
+                            ranNerm[i] = 4;
+                        else if (ranNerm[i] <= 0.30)
+                            ranNerm[i] = 5;
+                        else if (ranNerm[i] <= 0.35)
+                            ranNerm[i] = 6;
+                        else if (ranNerm[i] <= 0.40)
+                            ranNerm[i] = 7;
+                        else if (ranNerm[i] <= 0.45)
+                            ranNerm[i] = 8;
+                        else if (ranNerm[i] <= 0.50)
+                            ranNerm[i] = 9;
+                        else if (ranNerm[i] <= 0.55)
+                            ranNerm[i] = 10;
+                        else if (ranNerm[i] <= 0.60)
+                            ranNerm[i] = 11;
+                        else if (ranNerm[i] <= 0.65)
+                            ranNerm[i] = 12;
+                        else if (ranNerm[i] <= 0.70)
+                            ranNerm[i] = 13;
+                        else if (ranNerm[i] <= 0.75)
+                            ranNerm[i] = 14;
+                        else if (ranNerm[i] <= 0.80)
+                            ranNerm[i] = 15;
+                        else if (ranNerm[i] <= 0.85)
+                            ranNerm[i] = 16;
+                        else if (ranNerm[i] <= 0.90)
+                            ranNerm[i] = 17;
+                        else if (ranNerm[i] <= 0.95)
+                            ranNerm[i] = 18;
+                        } while (ranNerm[i] != 0 && ranNerm[i] != 1 && ranNerm[i] != 2 && ranNerm[i] != 3 && ranNerm[i] != 4 && ranNerm[i] != 5 && ranNerm[i] != 6 && ranNerm[i] != 7 && ranNerm[i] != 8 && ranNerm[i] != 9 && ranNerm[i] != 10 && ranNerm[i] != 11 && ranNerm[i] != 12 && ranNerm[i] != 13 && ranNerm[i] != 14 && ranNerm[i] != 15 && ranNerm[i] != 16 && ranNerm[i] != 17 && ranNerm[i] != 18);
+                        var botsmg = message.channel.send({embed: {
+                        title: "Which ball is the " + berllzNermg[ranNerm[i]] +"?",
+                        description: "1 => <:UnlockBall:463357163197431817> \n2 => <:UnlockBall:463357163197431817>",
+                        timestamp: new Date(),
+                        author: {
+                    name: "Guessing Game | Level : " + streakNum[i],
+                    icon_url: message.author.avatarURL
+                  }
+                        }});
+                    }
+                }
+                 
+            }
+        i++;
+    } while (i < 2)
 });
 
 
