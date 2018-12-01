@@ -3116,7 +3116,7 @@ client.on('message', message => {
 		/*for (cher = 8; cher < message.content.length(); cher++) {
 			/*werd = werd + message.content.charAt(o);
 		}*/
-		
+		/*
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
                         description: "" + cher + "" + werd + "" + lerngertherfwerd,
@@ -3125,7 +3125,7 @@ client.on('message', message => {
                     name: "Text to Emote",
                     icon_url: message.author.avatarURL
                   }
-                        }});
+                        }});*/
 	}
 });
 
