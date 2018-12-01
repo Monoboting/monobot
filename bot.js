@@ -3112,7 +3112,7 @@ client.on('message', message => {
 		
 		var werd = "";
 		for (var i = 0; i < message.content.length(); i++) {
-			werd += message.content.charAt(i);;
+			werd += message.content.charAt(i);
 		}
 		
 		var botsmg = message.channel.send({embed: {
