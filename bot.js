@@ -3111,13 +3111,14 @@ client.on('message', message => {
 	if(message.content.includes('m!emote') == true){
 		
 		var werd = "";
-		for (var o = 8; o < message.content.length(); o++) {
+		ver cher = 8;
+		for (cher = 8; cher < message.content.length(); cher++) {
 			/*werd = werd + message.content.charAt(o);*/
 		}
 		
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
-                        description: "" + o,
+                        description: "" + cher + "",
                         timestamp: new Date(),
                         author: {
                     name: "Text to Emote",
