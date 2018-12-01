@@ -3110,10 +3110,11 @@ client.on('message', message => {
 	    //letters to emotes
 	if(message.content.includes('m!emote') == true){
 		
-		var werd = "";
+		var werd = "test";
 		var cher = 8;
+		
 		for (cher = 8; cher < message.content.length; cher++) {
-			werd = werd + message.content.charAt(o);
+			//werd = werd + message.content.charAt(o);
 		}
 		
 		var botsmg = message.channel.send({embed: {
