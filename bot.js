@@ -566,7 +566,7 @@ client.on('message', message => {
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
         title: "V 2.2:",
-        description: "NEW COMMAND\n- Emoji to Text\nm!emote [text]",
+        description: "NEW COMMAND\n- Text to Emoji\nm!emote [text]",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
