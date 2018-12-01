@@ -3111,7 +3111,7 @@ client.on('message', message => {
 	if(message.content.includes('m!emote') == true){
 		
 		var werd = "";
-		for (var i = 0; i < message.content.length(); i++) {
+		for (var i = 8; i < message.content.length(); i++) {
 			werd += message.content.charAt(i);
 		}
 		
