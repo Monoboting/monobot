@@ -3195,7 +3195,7 @@ client.on('message', message => {
 				werd+= lerters[34] + "";
 			else if (res[cher] == "0")
 				werd+= lerters[35] + "";
-			else if (res[cher] == " ")
+			else if (res[cher] == "    ")
 				werd+= "  ";
 		}
 		
