@@ -251,7 +251,7 @@ client.on('message', message => {
         icon_url: client.user.avatarURL
         },
         title: "COMMANDS:",
-        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!game start\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
+        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!game start\n•m!emote [text]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -284,6 +284,10 @@ client.on('message', message => {
 	{
             name: "•m!game start",
 			value: "m!game start to begin the guessing game. | m!game stop to stop the game"
+        },
+	{
+            name: "•m!emote [text]",
+			value: "turns your text into emojis"
         },
 		{
             name: "•m!rps [r/p/s]",
@@ -550,7 +554,7 @@ client.on('message', message => {
 	if(message.content == 'm!info'){
 		message.channel.send({embed: {
         title: "INFO",
-        description: "Version 2.1\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC and DJ Lapras\n\nApproved by Lafocade",
+        description: "Version 2.2\n\n-Owner/Coder: Jek\n-Helpers: AdSF, ChaotiC, Buck and DJ Lapras\n\nApproved by Lafocade",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -561,8 +565,8 @@ client.on('message', message => {
     }
 	if(message.content == 'm!log'){
 		message.channel.send({embed: {
-        title: "V 2.1:",
-        description: "NEW COMMAND\n- Monobot Game -> m!game\n- More ideas suggested by you guys!\nHAVE FUN AND ENJOY!",
+        title: "V 2.2:",
+        description: "NEW COMMAND\n- Emoji to Text\nm!emote [text]",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
