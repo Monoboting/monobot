@@ -3119,7 +3119,7 @@ client.on('message', message => {
 			cherer = message.content.charCodeAt(o);
 			if (cherer == 'a')
 				werd+= lerters[0];*/
-			werd+= res[o];
+			werd+= res[0] + " ";
 		}
 		
 		var botsmg = message.channel.send({embed: {
