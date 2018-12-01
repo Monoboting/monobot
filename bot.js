@@ -3112,11 +3112,14 @@ client.on('message', message => {
 		
 		var werd = "test";
 		var cher = 8;
-		var cherer = message.content.charCodeAt(0);
+		//var cherer = message.content.charCodeAt(0);
+		var res = message.content.split("");
 		for (cher = 8; cher < message.content.length; cher++) {
+			/*
 			cherer = message.content.charCodeAt(o);
 			if (cherer == 'a')
-				werd+= lerters[0];
+				werd+= lerters[0];*/
+			werd+= res[o];
 		}
 		
 		var botsmg = message.channel.send({embed: {
