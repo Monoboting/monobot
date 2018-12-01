@@ -3195,8 +3195,8 @@ client.on('message', message => {
 				werd+= lerters[34] + "";
 			else if (res[cher] == "0")
 				werd+= lerters[35] + "";
-			else if (res[cher] == "    ")
-				werd+= "  ";
+			else if (res[cher] == " ")
+				werd+= "      ";
 		}
 		
 		var botsmg = message.channel.send({embed: {
