@@ -3112,13 +3112,14 @@ client.on('message', message => {
 		
 		var werd = "";
 		var cher = 8;
-		for (cher = 8; cher < message.content.length(); cher++) {
-			/*werd = werd + message.content.charAt(o);*/
-		}
+		var lerngertherfwerd = message.content.length();
+		/*for (cher = 8; cher < message.content.length(); cher++) {
+			/*werd = werd + message.content.charAt(o);
+		}*/
 		
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
-                        description: "" + cher + "",
+                        description: "" + cher + "" + werd + "" + lerngertherfwerd,
                         timestamp: new Date(),
                         author: {
                     name: "Text to Emote",
