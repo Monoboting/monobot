@@ -3114,7 +3114,7 @@ client.on('message', message => {
 	    //letters to emotes
 	if(message.content.includes('m!emote') == true){
 		
-		var werd = "test";
+		var werd = "";
 		var cher = 8;
 		//var cherer = message.content.charCodeAt(0);
 		var res = message.content.split("");
