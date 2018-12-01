@@ -3121,6 +3121,76 @@ client.on('message', message => {
 				werd+= lerters[0];*/
 			if (res[cher] == "a" || res[cher] == "A")
 				werd+= lerters[0] + "";
+			else if (res[cher] == "b" || res[cher] == "B")
+				werd+= lerters[1] + "";
+			else if (res[cher] == "c" || res[cher] == "C")
+				werd+= lerters[2] + "";
+			else if (res[cher] == "d" || res[cher] == "D")
+				werd+= lerters[3] + "";
+			else if (res[cher] == "e" || res[cher] == "E")
+				werd+= lerters[4] + "";
+			else if (res[cher] == "f" || res[cher] == "F")
+				werd+= lerters[5] + "";
+			else if (res[cher] == "g" || res[cher] == "G")
+				werd+= lerters[6] + "";
+			else if (res[cher] == "h" || res[cher] == "H")
+				werd+= lerters[7] + "";
+			else if (res[cher] == "i" || res[cher] == "I")
+				werd+= lerters[8] + "";
+			else if (res[cher] == "j" || res[cher] == "J")
+				werd+= lerters[9] + "";
+			else if (res[cher] == "k" || res[cher] == "K")
+				werd+= lerters[10] + "";
+			else if (res[cher] == "l" || res[cher] == "L")
+				werd+= lerters[11] + "";
+			else if (res[cher] == "m" || res[cher] == "M")
+				werd+= lerters[12] + "";
+			else if (res[cher] == "n" || res[cher] == "N")
+				werd+= lerters[13] + "";
+			else if (res[cher] == "p" || res[cher] == "O")
+				werd+= lerters[14] + "";
+			else if (res[cher] == "p" || res[cher] == "P")
+				werd+= lerters[15] + "";
+			else if (res[cher] == "q" || res[cher] == "Q")
+				werd+= lerters[16] + "";
+			else if (res[cher] == "r" || res[cher] == "R")
+				werd+= lerters[17] + "";
+			else if (res[cher] == "s" || res[cher] == "S")
+				werd+= lerters[18] + "";
+			else if (res[cher] == "t" || res[cher] == "T")
+				werd+= lerters[19] + "";
+			else if (res[cher] == "u" || res[cher] == "U")
+				werd+= lerters[20] + "";
+			else if (res[cher] == "v" || res[cher] == "V")
+				werd+= lerters[21] + "";
+			else if (res[cher] == "w" || res[cher] == "W")
+				werd+= lerters[22] + "";
+			else if (res[cher] == "x" || res[cher] == "X")
+				werd+= lerters[23] + "";
+			else if (res[cher] == "y" || res[cher] == "Y")
+				werd+= lerters[24] + "";
+			else if (res[cher] == "z" || res[cher] == "Z")
+				werd+= lerters[25] + "";
+			else if (res[cher] == "1")
+				werd+= lerters[26] + "";
+			else if (res[cher] == "2")
+				werd+= lerters[27] + "";
+			else if (res[cher] == "3")
+				werd+= lerters[28] + "";
+			else if (res[cher] == "4")
+				werd+= lerters[29] + "";
+			else if (res[cher] == "5")
+				werd+= lerters[30] + "";
+			else if (res[cher] == "6")
+				werd+= lerters[31] + "";
+			else if (res[cher] == "7")
+				werd+= lerters[32] + "";
+			else if (res[cher] == "8")
+				werd+= lerters[33] + "";
+			else if (res[cher] == "9")
+				werd+= lerters[34] + "";
+			else if (res[cher] == "0")
+				werd+= lerters[35] + "";
 		}
 		
 		var botsmg = message.channel.send({embed: {
