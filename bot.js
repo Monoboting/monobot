@@ -3109,14 +3109,17 @@ client.on('message', message => {
 	    
 	    //letters to emotes
 	if(message.content.includes('m!emote') == true){
-		/*
-		var [] res = new String[str.length()];
-		for (int i = 0; i < str.length(); i++) {
-			res[i] = str.charAt(i);
-		}*/
+		
+		var werd = "";
+		var [] res = var[message.content.length()];
+		for (int i = 0; i < message.content.length(); i++) {
+			res[i] = message.content.charAt(i);
+			werd += res[i];
+		}
+		
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
-                        description: "test: " + lerters[0] + "" + lerters[1] + "" + lerters[2] +"",
+                        description: "" + werd,
                         timestamp: new Date(),
                         author: {
                     name: "Text to Emote",
