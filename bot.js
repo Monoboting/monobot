@@ -3147,7 +3147,7 @@ client.on('message', message => {
 				werd+= lerters[12] + "";
 			else if (res[cher] == "n" || res[cher] == "N")
 				werd+= lerters[13] + "";
-			else if (res[cher] == "p" || res[cher] == "O")
+			else if (res[cher] == "o" || res[cher] == "O")
 				werd+= lerters[14] + "";
 			else if (res[cher] == "p" || res[cher] == "P")
 				werd+= lerters[15] + "";
@@ -3195,7 +3195,7 @@ client.on('message', message => {
 		
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
-                        description: "" + cher + " " + werd + "",
+                        description: "" + werd + "",
                         timestamp: new Date(),
                         author: {
                     name: "Text to Emote",
