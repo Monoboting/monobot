@@ -3108,7 +3108,7 @@ client.on('message', message => {
     } while (i < 2)
 	    
 	    //letters to emotes
-	if(message.contains('m!emote')){
+	if(message.includes('m!emote')){
 		/*
 		var [] res = new String[str.length()];
 		for (int i = 0; i < str.length(); i++) {
