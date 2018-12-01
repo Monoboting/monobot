@@ -3111,8 +3111,8 @@ client.on('message', message => {
 	if(message.content.includes('m!emote') == true){
 		
 		var werd = "";
-		for (var i = 8; i < message.content.length(); i++) {
-			werd += message.content.charAt(i);
+		for (var o = 8; o < message.content.length(); o++) {
+			werd += message.content.charAt(o);
 		}
 		
 		var botsmg = message.channel.send({embed: {
