@@ -3112,18 +3112,18 @@ client.on('message', message => {
 		
 		var werd = "";
 		for (var o = 8; o < message.content.length(); o++) {
-			werd += message.content.charAt(o);
+			/*werd = werd + message.content.charAt(o);*/
 		}
-		/*
+		
 		var botsmg = message.channel.send({embed: {
                         title: "Text to Emote",
-                        description: "" + werd,
+                        description: "" + o,
                         timestamp: new Date(),
                         author: {
                     name: "Text to Emote",
                     icon_url: message.author.avatarURL
                   }
-                        }});*/
+                        }});
 	}
 });
 
