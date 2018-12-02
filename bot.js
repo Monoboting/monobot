@@ -3215,7 +3215,7 @@ client.on('message', message => {
 				werd+= lerters[37] + "";
 			else if (res[cher] == "%")
 				werd+= lerters[38] + "";
-			else if (res[cher] == "-")
+			else if (res[cher] == "-") 
 				werd+= lerters[39] + "";
 			else if (res[cher] == "×")
 				werd+= lerters[40] + "";
@@ -3231,11 +3231,11 @@ client.on('message', message => {
 				werd+= lerters[45] + "";
 			else if (res[cher] == "÷")
 				werd+= lerters[46] + "";
-			else if (res[cher] == "\")
+			else if (res[cher] == "/") 
 				werd+= lerters[47] + "";
-			else if (res[cher] == "*")
+			else if (res[cher] == "*") 
 				werd+= lerters[48] + "";
-			else if (res[cher] == "&")
+			else if (res[cher] == "&") 
 				werd+= lerters[49] + "";
 			else if (res[cher] == " ")
 				werd+= "      ";
