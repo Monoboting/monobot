@@ -3209,6 +3209,34 @@ client.on('message', message => {
 				werd+= lerters[34] + "";
 			else if (res[cher] == "0")
 				werd+= lerters[35] + "";
+			else if (res[cher] == "+")
+				werd+= lerters[36] + "";
+			else if (res[cher] == ".")
+				werd+= lerters[37] + "";
+			else if (res[cher] == "%")
+				werd+= lerters[38] + "";
+			else if (res[cher] == "-")
+				werd+= lerters[39] + "";
+			else if (res[cher] == "×")
+				werd+= lerters[40] + "";
+			else if (res[cher] == "<")
+				werd+= lerters[41] + "";
+			else if (res[cher] == "#")
+				werd+= lerters[42] + "";
+			else if (res[cher] == ">")
+				werd+= lerters[43] + "";
+			else if (res[cher] == "\\")
+				werd+= lerters[44] + "";
+			else if (res[cher] == "!")
+				werd+= lerters[45] + "";
+			else if (res[cher] == "÷")
+				werd+= lerters[46] + "";
+			else if (res[cher] == "\")
+				werd+= lerters[47] + "";
+			else if (res[cher] == "*")
+				werd+= lerters[48] + "";
+			else if (res[cher] == "&")
+				werd+= lerters[49] + "";
 			else if (res[cher] == " ")
 				werd+= "      ";
 		}
