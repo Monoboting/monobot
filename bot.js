@@ -3225,13 +3225,13 @@ client.on('message', message => {
 				werd+= lerters[42] + "";
 			else if (res[cher] == ">")
 				werd+= lerters[43] + "";
-			else if (res[cher] == "\\")
+			else if (res[cher] == "/")
 				werd+= lerters[44] + "";
 			else if (res[cher] == "!")
 				werd+= lerters[45] + "";
 			else if (res[cher] == "÷")
 				werd+= lerters[46] + "";
-			else if (res[cher] == "/") 
+			else if (res[cher] == "\\") 
 				werd+= lerters[47] + "";
 			else if (res[cher] == "*") 
 				werd+= lerters[48] + "";
