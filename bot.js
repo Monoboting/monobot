@@ -608,7 +608,7 @@ client.on('message', message => {
         }
     });
     }
-    if(message.content.toLowerCase() == 'm!wiki CommunityGolf Puzzle Pack'){
+    if(message.content.toLowerCase() == 'm!wiki communitygolf puzzle pack'){
 		message.channel.send({embed: {
         title: "Monogolf Wiki",
         description: "http://wiki.monogolf.golf/CommunityGolf/Puzzle_Pack ",
