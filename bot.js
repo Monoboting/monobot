@@ -568,7 +568,7 @@ client.on('message', message => {
             }
         }
     });
-    }
+    
     }
         if(message.content == 'm!wiki CommunityGolf' || message.content == 'm!wiki Communitygolf' || message.content == 'm!wiki communitygolf'){
 		message.channel.send({embed: {
@@ -581,7 +581,7 @@ client.on('message', message => {
             }
         }
     });
-    }
+    
     }
         if(message.content == 'm!wiki CommunityGolf baan pack' || message.content == 'm!wiki Communitygolf baan pack' || message.content == 'm!wiki communitygolf baan pack'){
 		message.channel.send({embed: {
