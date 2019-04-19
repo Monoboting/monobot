@@ -265,7 +265,7 @@ client.on('message', message => {
         icon_url: client.user.avatarURL
         },
         title: "COMMANDS:",
-        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!game start\n•m!emote [text]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball",
+        description: "•m!info\n•m!commands\n•m!solve [pack] [level]\n•m!game start\n•m!emote [text]\n•m!rule [number]\n•m!rps [r/p/s]\n•m!protip [number]\n•m!meme\n•m!ball\n•m!wiki",
         timestamp: new Date(),
         footer: {
                 icon_url: client.user.avatarURL,
@@ -318,6 +318,10 @@ client.on('message', message => {
 		{
             name: "•m!ball",
 			value: "m!ball provides a random ball"
+        },
+		{
+            name: "•m!wiki",
+			value: "m!wiki provides wiki links"
         }
         ],
         timestamp: new Date(),
@@ -541,6 +545,83 @@ client.on('message', message => {
         }
     });
     }
+        if(message.content == 'm!wiki'){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki",
+        description: "Official Wiki Page: http://wiki.monogolf.golf/Main_Page",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+        if(message.content == 'm!wiki arcade'){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki: Arcade",
+        description: "http://wiki.monogolf.golf/Arcade",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+    }
+        if(message.content == 'm!wiki CommunityGolf' || message.content == 'm!wiki Communitygolf' || message.content == 'm!wiki communitygolf'){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki",
+        description: "http://wiki.monogolf.golf/Community_Golf ",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+    }
+        if(message.content == 'm!wiki CommunityGolf baan pack' || message.content == 'm!wiki Communitygolf baan pack' || message.content == 'm!wiki communitygolf baan pack'){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki",
+        description: "http://wiki.monogolf.golf/CommunityGolf/Baan_Pack ",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+    
+        if(message.content.toLower() == 'm!wiki CommunityGolf FreeMexican Pack''){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki",
+        description: "http://wiki.monogolf.golf/CommunityGolf/FreeMexican_Pack ",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+    if(message.content.toLower() == 'm!wiki CommunityGolf Puzzle Pack''){
+		message.channel.send({embed: {
+        title: "Monogolf Wiki",
+        description: "http://wiki.monogolf.golf/CommunityGolf/Puzzle_Pack ",
+        timestamp: new Date(),
+        footer: {
+                icon_url: client.user.avatarURL,
+                text: "Monogolf Bot"
+            }
+        }
+    });
+    }
+    
+    
 	if(message.content == 'm!rule 34'){
 		message.channel.send({embed: {
         title: "( ͡° ͜ʖ ͡°)",
