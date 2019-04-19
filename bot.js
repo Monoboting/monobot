@@ -557,7 +557,7 @@ client.on('message', message => {
         }
     });
     }
-        if(message.content == 'm!wiki arcade'){
+        if(message.content.toLowerCase() == 'm!wiki arcade'){
 		message.channel.send({embed: {
         title: "Monogolf Wiki: Arcade",
         description: "http://wiki.monogolf.golf/Arcade",
@@ -583,7 +583,7 @@ client.on('message', message => {
     });
     
     }
-        if(message.content == 'm!wiki CommunityGolf baan pack' || message.content == 'm!wiki Communitygolf baan pack' || message.content == 'm!wiki communitygolf baan pack'){
+        if(message.content.toLowerCase() == 'm!wiki communitygolf baan pack'){
 		message.channel.send({embed: {
         title: "Monogolf Wiki",
         description: "http://wiki.monogolf.golf/CommunityGolf/Baan_Pack ",
@@ -596,7 +596,7 @@ client.on('message', message => {
     });
     }
     
-        if(message.content.toLowerCase() == 'm!wiki CommunityGolf FreeMexican Pack'){
+        if(message.content.toLowerCase() == 'm!wiki communitygolf freemexican pack'){
 		message.channel.send({embed: {
         title: "Monogolf Wiki",
         description: "http://wiki.monogolf.golf/CommunityGolf/FreeMexican_Pack ",
